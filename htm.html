@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-menu">
+            <h1>Танюшенька</h1>
+            <ul onclick="showMenu()" onmouseleave="hideMenu()">
+                <li onclick="alert(1)">Главная</li>
+                <li onclick="alert(2)">Портфолио</li>
+                <li onclick="alert(3)">Услуги</li>
+                <li onclick="alert(4)">Инфо</li>
+                <li onclick="alert(5)">Контакты</li>
+            </ul>
+        </div>
+        <div class="background">
+            <img src="imgs/1.jpg">
+        </div>
+        <div class="background">
+            <img src="imgs/1.jpg">
+        </div>
+    </div>
+    <div class="body">
+        <div class="main-information">
+            <h2>УСЛУГИ ФОТОГРАФА</h2>
+            <p>Профессиональный фотограф с большим опытом работы. Фотосъемка в Москве, Санкт-Петербурге и других городах России, а также за рубежом.</p>
+        </div>
+        <div class="body-row">
+            <div class="service">
+                <img src="imgs/1.jpg">
+                <h2>ПОРТРЕТНАЯ СЪЕМКА</h2><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
+                <a class="btn">ПЕРЕЙТИ К УСЛУГЕ</a>
+            </div>
+            <div class="service">
+                <img src="imgs/2.jpg">
+                <h2>СЕМЕЙНАЯ СЪЕМКА</h2><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
+                <a class="btn">ПЕРЕЙТИ К УСЛУГЕ</a>
+            </div>
+            <div class="service">
+                <img src="imgs/5.JPG">
+                <h2>LOVE STORY</h2><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
+                <a class="btn">ПЕРЕЙТИ К УСЛУГЕ</a>
+            </div>
+            <div class="service">
+                <img src="imgs/3.jpg">
+                <h2>РЕКЛАМНАЯ СЪЕМКА</h2><hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><hr>
+                <a class="btn">ПЕРЕЙТИ К УСЛУГЕ</a>
+            </div>
+        </div>
+        <div class="body-row">
+            <div class="after-service">
+                <p>Услуги профессионального фотографа, привлечение к съемкам лучших специалистов. Решение творческих и организационных задач любой сложности. Создание рекламных фотографий и выразительных портретов. Профессиональная работа в студии и на выезде.</p><br>
+                <a class="btn">СПИСОК УСЛУГ</a>
+                <a class="btn">ПОРТФОЛИО</a>
+            </div>
+        </div>
+        <div class="body-row">
+            <h2>КОНТАКТЫ</h2>
+            <p>Данные для связи по вопросам съемок и сотрудничества</p>
+        </div>
+    </div>
+    <script>
+        let background = document.getElementsByClassName('background'), currentImage = 1, currentBlock = 0;
+        setInterval(function () {
+            currentImage++;
+            background[currentBlock % 2].getElementsByTagName('img')[0].src = 'imgs/' + (currentImage % 8 + 1) + '.jpg';
+            background[currentBlock % 2].style.opacity = 1;
+            background[(currentBlock + 1) % 2].style.opacity = 0;
+            currentBlock++;
+        }, 7500);
+
+        let ul = document.getElementsByTagName('ul')[0];
+        showMenu = function () {
+            if (getComputedStyle(ul).width === '40px'){
+                ul.style.width = '120px';
+                ul.style.height = '199px';
+                let lies = ul.getElementsByTagName('li');
+                for (i = 0; i < lies.length; i++){
+                    lies[i].style.height = '39px';
+                    lies[i].style.fontSize = '18px';
+                    lies[i].style.borderBottom = '1px solid #E0E0E0';
+                }
+            }
+        };
+        hideMenu = function () {
+            if (getComputedStyle(ul).width === '120px'){
+                ul.style.width = '40px';
+                ul.style.height = '40px';
+                let lies = ul.getElementsByTagName('li');
+                for (i = 0; i < lies.length; i++){
+                    lies[i].style.height = '0';
+                    lies[i].style.fontSize = '0';
+                    lies[i].style.border = '0';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
