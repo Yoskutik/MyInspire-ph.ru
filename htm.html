@@ -8,7 +8,7 @@
     <div class="header">
         <div class="header-menu">
             <h1>Танюшенька</h1>
-            <ul onclick="showMenu()" onmouseleave="hideMenu()">
+            <ul onclick="showMenu()" onmouseleave="hideMenu()" class="big-list">
                 <li onclick="alert(1)">Главная</li>
                 <li onclick="alert(2)">Портфолио</li>
                 <li onclick="alert(3)">Услуги</li>
@@ -16,6 +16,16 @@
                 <li onclick="alert(5)">Контакты</li>
             </ul>
         </div>
+        <ul onclick="showMenu()" onmouseleave="hideMenu()" class="small-list">
+            <li onclick="alert(1)">Главная</li>
+            <li onclick="alert(2)">Портфолио</li>
+            <li onclick="alert(3)">Услуги</li>
+            <li onclick="alert(4)">Инфо</li>
+            <li onclick="alert(5)">Контакты</li>
+            <i></i>
+            <i></i>
+            <i></i>
+        </ul>
         <div class="background">
             <img src="imgs/1.jpg">
         </div>
@@ -61,9 +71,17 @@
                 <a class="btn">ПОРТФОЛИО</a>
             </div>
         </div>
-        <div class="body-row">
-            <h2>КОНТАКТЫ</h2>
-            <p>Данные для связи по вопросам съемок и сотрудничества</p>
+        <div class="body-row body-row-contacts">
+            <div class="title">
+                <h2>КОНТАКТЫ</h2>
+                <p>Данные для связи по вопросам съемок и сотрудничества</p>
+            </div>
+            <div class="contacts">
+                <p><strong>По вопросам съемок</strong><br>example@example.com<br>Тел.: +7(999)999-99-99<br>WhatsApp, Viber, Telegram</p><hr>
+                <p><strong>Связи с общественностью</strong><br>example@example.com<br><strong>Деловые предложения</strong><br>example@example.com</p><hr>
+                <p><strong>My location</strong><br>location location<br>Тел.: +7(999)999-99-99<br>location location<br>location location</p>
+            </div>
+            <div class="location"></div>
         </div>
     </div>
     <script>
@@ -91,8 +109,8 @@
         };
         hideMenu = function () {
             if (getComputedStyle(ul).width === '120px'){
-                ul.style.width = '40px';
-                ul.style.height = '40px';
+                ul.style.width = '60px';
+                ul.style.height = '60px';
                 let lies = ul.getElementsByTagName('li');
                 for (i = 0; i < lies.length; i++){
                     lies[i].style.height = '0';
@@ -100,6 +118,10 @@
                     lies[i].style.border = '0';
                 }
             }
+            setTimeout(function () {
+                let ies = ul.getElementsByTagName('i');
+                for (i = 0; i < ies.length; i++) ies[i].style.display = 'block';
+            }, 250);
         }
     </script>
 </body>
