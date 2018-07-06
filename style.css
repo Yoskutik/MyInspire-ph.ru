@@ -183,7 +183,8 @@ body {
       grid-template-columns: 2fr 7fr;
       grid-template-rows: 90px 480px;
       grid-template-areas: "title title" "contacts location";
-      grid-column-gap: 20px; }
+      grid-column-gap: 20px;
+      margin-bottom: 40px; }
       .body-row-contacts .title {
         grid-area: title; }
       .body-row-contacts .contacts {
@@ -197,11 +198,35 @@ body {
           display: block;
           width: 100%;
           height: 25%;
-          margin: 8.25% 0; }
+          margin: 0;
+          letter-spacing: 1;
+          padding: 10px 10px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
       .body-row-contacts .location {
         border: 1px solid gray;
         grid-area: location;
         background: #FAFAFA; }
+    .body-row-information .information-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas: "title title" "left right";
+      grid-column-gap: 20px; }
+      .body-row-information .information-container .title {
+        grid-area: title; }
+      .body-row-information .information-container .left {
+        grid-area: left; }
+      .body-row-information .information-container .right {
+        grid-area: right; }
+      .body-row-information .information-container p {
+        text-align: justify;
+        font-size: 19px; }
+      .body-row-information .information-container h2 {
+        font-size: 20px;
+        letter-spacing: 1;
+        margin: 15px 0 10px 0; }
 
 .btn {
   display: inline-block;
