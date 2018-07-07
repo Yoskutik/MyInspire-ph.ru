@@ -62,7 +62,8 @@ body {
     margin: 0;
     line-height: 39px;
     font-size: 0;
-    height: 0; }
+    height: 0;
+    display: none; }
     .header .small-list li:last-child {
       border: 0 !important; }
     .header .small-list li:hover:after {
@@ -86,7 +87,8 @@ body {
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
-  transition-duration: 0.3s; }
+  transition-duration: 0.3s;
+  position: relative; }
   .header li:after {
     display: block;
     content: '';
@@ -105,6 +107,11 @@ body {
     .header li:hover:after {
       left: 0;
       width: 100%; }
+  .header li a {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%; }
 .header .background {
   position: fixed;
   top: 70px;
@@ -188,16 +195,13 @@ body {
       .body-row-contacts .title {
         grid-area: title; }
       .body-row-contacts .contacts {
-        border: 1px solid gray;
+        border: 1px solid #E0E0E0;
         grid-area: contacts;
         background: #FAFAFA;
         height: 100%; }
         .body-row-contacts .contacts p {
           text-align: left;
           font-size: 18px;
-          display: block;
-          width: 100%;
-          height: 25%;
           margin: 0;
           letter-spacing: 1;
           padding: 10px 10px;
@@ -205,28 +209,41 @@ body {
           -moz-box-sizing: border-box;
           box-sizing: border-box; }
       .body-row-contacts .location {
-        border: 1px solid gray;
+        border: 1px solid #E0E0E0;
         grid-area: location;
         background: #FAFAFA; }
-    .body-row-information .information-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
-      grid-template-areas: "title title" "left right";
-      grid-column-gap: 20px; }
-      .body-row-information .information-container .title {
-        grid-area: title; }
-      .body-row-information .information-container .left {
-        grid-area: left; }
-      .body-row-information .information-container .right {
-        grid-area: right; }
-      .body-row-information .information-container p {
-        text-align: justify;
-        font-size: 19px; }
-      .body-row-information .information-container h2 {
-        font-size: 20px;
-        letter-spacing: 1;
-        margin: 15px 0 10px 0; }
+    .body-row-information {
+      border-top: 1px solid #E0E0E0;
+      padding-top: 20px; }
+      .body-row-information .information-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: "title title" "left right";
+        grid-column-gap: 20px; }
+        .body-row-information .information-container .title {
+          grid-area: title; }
+        .body-row-information .information-container .left {
+          grid-area: left; }
+        .body-row-information .information-container .right {
+          grid-area: right; }
+        .body-row-information .information-container p {
+          text-align: justify;
+          font-size: 19px; }
+        .body-row-information .information-container h2 {
+          font-size: 20px;
+          letter-spacing: 1;
+          margin: 15px 0 10px 0; }
+
+.footer {
+  height: 40px;
+  border: 1px solid #E0E0E0;
+  position: relative; }
+  .footer span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px; }
 
 .btn {
   display: inline-block;
@@ -254,10 +271,18 @@ h2 {
   font-weight: 700;
   letter-spacing: 1px; }
 
-@media screen and (max-width: 650px), screen and (orientation: portrait) {
+@media screen and (max-width: 750px), screen and (orientation: portrait) {
   .body-row {
     width: 86%;
     margin: 0 0 0 7%; }
+    .body-row-information .information-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      grid-template-areas: "title" "left" "right"; }
+      .body-row-information .information-container .left {
+        margin: 10px 0 0; }
+      .body-row-information .information-container .right {
+        margin: 0 0 10px; }
 
   .service {
     width: 100% !important; }
@@ -282,5 +307,25 @@ h2 {
 @media screen and (max-width: 930px), screen and (orientation: portrait) {
   .body {
     top: 65vw; } }
+@media screen and (max-width: 1000px) {
+  .body-row-contacts {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title" "contacts" "location";
+    grid-row-gap: 10px; }
+    .body-row-contacts .title p {
+      margin: 5px 0; }
+    .body-row-contacts .title h2 {
+      margin: 10px 0; }
+    .body-row-contacts .contacts p {
+      display: inline-block;
+      font-size: 16px; } }
+@media screen and (max-width: 830px) {
+  .body-row-contacts .contacts p {
+    font-size: 14px;
+    padding: 8px 2px; } }
+@media screen and (max-width: 740px) {
+  .body-row-contacts .contacts p {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */
