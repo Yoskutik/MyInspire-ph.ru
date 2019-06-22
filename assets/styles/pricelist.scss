@@ -1,0 +1,46 @@
+.list {
+  &__item {
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    max-height: 56px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    &_title {
+      //font-size: 18px;
+    }
+
+    &_price {
+      margin: 0 15px 0 auto;
+    }
+
+    &_cross {
+      height: 23px;
+      width: 23px;
+      padding: 3px;
+      border: 1px solid #E0E0E0;
+      border-radius: 50%;
+      transform: rotate(45deg);
+      transition-duration: 0.5s;
+    }
+
+    &.active &_cross {
+      transform: rotate(0);
+    }
+  }
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+hr {margin: 0}

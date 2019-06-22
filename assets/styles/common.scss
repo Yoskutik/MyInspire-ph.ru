@@ -1,0 +1,202 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+$font_color: #5c5c65;
+$border_color: #E0E0E0;
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $border_color;
+
+  .dropdown-toggle {display: none;}
+
+  .container {display: flex;}
+
+  &__title {margin-left: auto;}
+
+  &__link {
+    color: $font_color;
+
+    span {
+      display: inline-block;
+
+      &:after{
+        display: block;
+        content: '';
+        width: 0;
+        border-top: 1px solid lighten($font_color, 30%);
+        position: relative;
+        top: -4px;
+        left: 50%;
+        transition-duration: 0.3s;
+      }
+
+      &:hover {
+        color: lighten($font_color, 30%);
+
+        &:after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  i {
+    display: block;
+    width: 25px;
+    height: 5px;
+
+    &:nth-child(2n+1) {background: darkgray;}
+  }
+
+  .dropdown-toggle:after {display: none;}
+}
+
+.body {
+  margin-top: 20px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.9s;
+  opacity: 1;
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition-duration: 1s;
+  opacity: 0;
+  transform: translate(0, 100px);
+}
+
+.footer {
+  background-color: #1d262d;
+  padding: 15px 0 20px 0;
+  border-top: 2px solid #CCC;
+  color: white;
+  flex-wrap: wrap;
+  margin-top: auto;
+
+  &__main {
+    display: flex;
+  }
+
+  &__block {
+    margin-right: 30px;
+
+    &.near {margin-right: 15px;}
+
+    h1 {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #bac8d3;
+    }
+
+    a {
+      font-size: 14px !important;
+      color: #869FB2 !important;
+
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+
+  &__copyright {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    font-size: 14px;
+    color: #869FB2;
+  }
+}
+
+// xs, sm, md
+@media screen and (max-width: 991px) {
+  .header {
+    letter-spacing: 0;
+    font-size: 16px;
+
+    .nav-link {padding: 0.5rem 0.5rem}
+  }
+
+  .footer__block {
+    margin-right: 15px;
+  }
+}
+
+// xs, sm
+@media screen and (max-width: 767px) {
+  .header {
+    letter-spacing: 1px;
+    font-size: 18px;
+
+    &__link {
+      padding-left: 12px;
+      padding-right: 12px;
+      font-size: 16px;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    .dropdown-toggle {
+      display: initial;
+    }
+  }
+}
+
+// xxs?
+@media screen and (max-width: 450px) {
+  .footer {
+    padding-bottom: 30px;
+
+    &__copyright {
+      bottom: -20px;
+      font-size: 12px;
+    }
+
+    &__block {
+      margin-right: 8px;
+
+      a {font-size: 12px !important;}
+      h1 {font-size: 14px !important;}
+    }
+  }
+
+  .toast {
+    max-width: 300px;
+  }
+}
+
+
+@font-face {
+  font-family: Gotham;
+  src: url(../fonts/Gotham.otf);
+}
+
+@font-face {
+  font-family: Hortensia;
+  src: url(../fonts/Hortensia.ttf);
+}
