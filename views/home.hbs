@@ -1,0 +1,148 @@
+<link rel="stylesheet" href="assets/styles/home.css">
+<script src="assets/scripts/home.js"></script>
+
+<div class="row">
+    <div class="collage col-lg-9 col-md-8">
+        <div class="collage__block">
+            {{#repeat 8}}
+            <img class="small">
+            {{/repeat}}
+        </div>
+        <div class="collage__block">
+            {{#repeat 8}}
+            <img class="small hidden">
+            {{/repeat}}
+        </div>
+        <div class="collage__block">
+            {{#initbig 3}}
+            <img class="big hidden">
+            {{/initbig}}
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4">
+        <div class="card info">
+            <div class="card-body">
+                <div class="avatar">
+                    <img src="assets/imgs/ava.jpg">
+                </div>
+                <div>
+                    <h4 class="card-title">Мельникова Татьяна</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">Фотограф-ретушер</h6>
+                    <p class="card-text">
+                        Индивидуальные съёмки, бьюти съёмки, love-story и high-end retouch.<br>
+                        <small>г. Санкт-Петербург</small>
+                    </p>
+                    <a href="https://www.instagram.com/myinspire_ph/" class="card-link" target="_blank">
+                        <img src="assets/imgs/icons/instagram.png" alt="Instagram" width="32">
+                    </a>
+                    <a href="https://vk.com/inspiredbyspb" class="card-link" target="_blank">
+                        <img src="assets/imgs/icons/vk.png" alt="VK" width="32">
+                    </a>
+                    <a class="card-link" onclick="onTelegramClick()" style="cursor: pointer">
+                        <img src="assets/imgs/icons/telegram.png" alt="Telegram" width="32">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <h2 class="title text-center">Обо мне</h2>
+</div>
+<div class="row">
+    <p class="col-md-6 text-justify">
+        Привет! Меня зовут Таня и я фотограф из прекрасного города на
+        Неве. Я влюбилась в фотографию еще в 12 лет. И начиная с 2017
+        года я занимаюсь ей профессионально. Каждый день я стремлюсь
+        улучшить качество своих работ и вкладываю в каждую фотографию
+        100% своих сил.
+    </p>
+    <p class="col-md-6 text-justify">
+        Я стараюсь подобрать индивидуальный подход к каждому человеку,
+        с которым я работаю, для того раскрыть его потенциал. Благодаря
+        этому у Вас останутся только самые приятные воспоминания в виде
+        фотографий от меня.<br>
+        Со всеми моими работами можно ознакомиться по <a href="/portfolio">ссылке</a>.
+    </p>
+</div>
+<hr>
+<div class="row">
+    <h2 class="title text-center">Индивидуальная съёмка</h2>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-9">
+        <div class="street">
+            <p class="street__description text-justify">
+                Если Вы давно хотели тотально обновить свои фото в социальных
+                сетях или просто побаловать себя и хорошо провести время, то
+                индивидуальная съёмка для этого подойдёт как нельзя лучше. До
+                съёмки мы продумаем идею, подберём образ, локацию, и если
+                необходимо, то даже составим маршрут из нескольких мест для съёмок.
+            </p>
+            {{#initStreet}}{{/initStreet}}
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <h2 class="title text-center">Парная съемка</h2>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-9">
+        <div class="street">
+            <p class="street__description text-justify">
+                Мы запечатлеем ваши самые нежные чувства. Придумаем идею,
+                составим образы, подберём локацию. После съёмки вы получите
+                26 фото в цветокоррекции и лёгкой ретуши.
+            </p>
+            {{#initStreet}}{{/initStreet}}
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <h2 class="title text-center">Beauty съёмка</h2>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-9">
+        <div class="beauty">
+            <p class="beauty__description text-justify">
+                Если Вы хотите примерить на себя роль настоящей модели из
+                глянцевых журналов, то бьюти-съёмка — это определённо то,
+                что нужно. С меня составление образа, аренда подходящей
+                студии, поиск профессионального визажиста, который сделает
+                Вам потрясающие макияж и укладку, а также съёмка и
+                редактирование фотографий.
+            </p>
+            <div class="beauty__photo">
+                <img src="assets/imgs/portfolio/beauty/6.jpg" />
+                <img src="assets/imgs/portfolio/beauty/6.1.jpg" />
+            </div>
+            <div class="beauty__photo">
+                <img src="assets/imgs/portfolio/beauty/8.jpg" />
+                <img src="assets/imgs/portfolio/beauty/8.1.jpg" />
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <p class="col-md-6 text-justify">
+        Whether you are planning a simple elopement in NYC or an
+        over-the-top wedding at a Manhattan country club, the wedding
+        photographer you hire is there to tell a story. That story is
+        the love of you and your soon-to-be spouse, from the engagement
+        and the selection of the wedding rings to the ceremony itself
+        and the amazing shots that commemorate it. Hiring a great
+        wedding photographer in Brooklyn is not always easy, but once
+    </p>
+    <p class="col-md-6 text-justify">
+        you understand that you are telling a story, the process should
+        make a little more sense. Marriage photography is a different kind
+        of art form and not one that every photography aficionado is able
+        to pull off. Whether they are a wedding photographer in Manhattan
+        or in New York, the best pros understand both the solemnity and
+        the fun of the moment, and they aim to capture both in their finished wedding shoots.
+    </p>
+</div>

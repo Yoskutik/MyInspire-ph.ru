@@ -1,0 +1,33 @@
+{
+  "name": "myinspire_ph-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-server": "babel server\\server.js -o server.js",
+    "build-home": "babel assets\\js\\home.js -o assets\\js\\home.min.js",
+    "build": "npm run build && npm run build-main",
+    "server": "npm run build-server && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bower": "^1.8.8",
+    "cocoen": "^2.0.5",
+    "img-slider": "^2.2.0",
+    "juxtaposejs": "^1.1.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-minify": "^0.5.0",
+    "bootstrap": "^4.3.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "html": "^1.0.0",
+    "jquery": "^3.4.1"
+  }
+}

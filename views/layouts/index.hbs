@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html lang="ru">
+<head>
+    <script>console.time('Loaded');</script>
+    <meta charset="utf-8">
+    <title>MyInspire photographer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/jquery.event.move.js"></script>
+    <script src="assets/js/jquery.twentytwenty.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/scripts/common.js"></script>
+    <link rel="stylesheet" href="assets/styles/common.css">
+    <link rel="stylesheet" href="assets/styles/twentytwenty.css">
+</head>
+<body>
+    <div class="loader main-loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <button type="button" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i></i><i></i><i></i><i></i><i></i>
+            </button>
+            <div class="nav header__nav">
+                <a class="nav-link header__link" href="/"><span>Главная</span></a>
+                <a class="nav-link header__link" href="/portfolio"><span>Портфолио</span></a>
+                <a class="nav-link header__link" href="/pricelist"><span>Цены</span></a>
+                <a class="nav-link header__link" href="#"><span>Инфо</span></a>
+                <a class="nav-link header__link" href="#"><span>Контакты</span></a>
+            </div>
+            <div class="dropdown-menu header__nav">
+                <a class="nav-link header__link" href="/"><span>Главная</span></a>
+                <a class="nav-link header__link" href="/portfolio"><span>Портфолио</span></a>
+                <a class="nav-link header__link" href="/pricelist"><span>Цены</span></a>
+                <a class="nav-link header__link" href="#"><span>Инфо</span></a>
+                <a class="nav-link header__link" href="#"><span>Контакты</span></a>
+            </div>
+            <a class="nav-link header__title">MyInspire photographer</a>
+        </div>
+    </header>
+    <div class="body container">
+       {{{body}}}
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="footer__main col-md-9">
+                        <div class="footer__block">
+                            <h1>Icons</h1>
+                            <a href="https://www.flaticon.com/" target="_blank">FlatIcon</a><br>
+                            <a href="https://www.icon-icons.com/" target="_blank">Icon-Icons</a>
+                        </div>
+                        <div class="footer__block">
+                            <h1>Developer</h1>
+                            <a href="https://www.github.com/yoskutik" target="_blank">Yoskutik</a>
+                        </div>
+                        <div class="footer__block">
+                            <h1>Language</h1>
+                            <a href="/">Русский</a><br>
+                            <a href="en/">English</a>
+                        </div>
+                        <div class="footer__block near">
+                            <h1>Contacts</h1>
+                            <a target="_blank" href="https://www.instagram.com/myinspire_ph/">Instagram</a><br>
+                            <a target="_blank" href="https://vk.com/inspiredbyspb">VK</a><br>
+                            <a onclick="onTelegramClick()" style="cursor: pointer">Telegram</a>
+                        </div>
+                        <div class="footer__block">
+                            <h1 style="opacity: 0">Contacts</h1>
+                            <a onclick="onTelegramClick()" style="cursor: pointer">WhatsApp</a><br>
+                            <a onclick="onEmailClick()" style="cursor: pointer">E-mail</a><br>
+                        </div>
+                        <span class="footer__copyright">
+                            &copy; 2019 MyInspire.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
