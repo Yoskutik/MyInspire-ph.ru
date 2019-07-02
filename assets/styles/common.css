@@ -8652,7 +8652,8 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  font-family: Gotham, sans-serif; }
 
 .header {
   margin-top: 20px;
@@ -8733,7 +8734,7 @@ body {
 
 .footer {
   background-color: #1d262d;
-  padding: 15px 0 20px 0;
+  padding: 15px 0 30px 0;
   border-top: 2px solid #CCC;
   color: white;
   -ms-flex-wrap: wrap;
@@ -8744,21 +8745,22 @@ body {
     display: -ms-flexbox;
     display: flex; }
   .footer__block {
-    margin-right: 30px; }
+    margin-right: 50px;
+    font-size: 14px !important;
+    color: #c4d0da; }
     .footer__block.near {
       margin-right: 15px; }
     .footer__block h1 {
-      margin: 10px 0;
+      margin: 10px 0 5px;
       font-size: 16px;
       color: #bac8d3; }
     .footer__block a {
-      font-size: 14px !important;
       color: #869FB2 !important; }
       .footer__block a:hover {
         text-decoration: underline !important; }
   .footer__copyright {
     position: absolute;
-    bottom: -10px;
+    bottom: -25px;
     right: 0;
     font-size: 14px;
     color: #869FB2; }
@@ -8785,20 +8787,24 @@ body {
     .header .dropdown-toggle {
       display: initial; } }
 @media screen and (max-width: 450px) {
-  .footer {
-    padding-bottom: 30px; }
-    .footer__copyright {
-      bottom: -20px;
-      font-size: 12px; }
-    .footer__block {
-      margin-right: 8px; }
-      .footer__block a {
-        font-size: 12px !important; }
-      .footer__block h1 {
-        font-size: 14px !important; }
+  .footer__copyright {
+    bottom: -20px;
+    font-size: 12px; }
+  .footer__block {
+    margin-right: 8px; }
+    .footer__block a {
+      font-size: 12px !important; }
+    .footer__block h1 {
+      font-size: 14px !important; }
 
   .toast {
     max-width: 300px; } }
+@media screen and (max-width: 400px) {
+  .header__title {
+    font-size: 16px; } }
+@media screen and (max-width: 350px) {
+  .header__title {
+    font-size: 14px; } }
 @font-face {
   font-family: Gotham;
   src: url(../fonts/Gotham.otf); }

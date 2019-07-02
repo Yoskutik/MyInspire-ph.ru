@@ -1,4 +1,6 @@
 .list {
+  margin-bottom: 20px;
+
   &__item {
     cursor: pointer;
     padding: 15px;
@@ -15,12 +17,18 @@
       margin-bottom: 15px;
     }
 
-    &_title {
-      //font-size: 18px;
-    }
-
     &_price {
       margin: 0 15px 0 auto;
+
+      .sale {
+        opacity: 0.8;
+        text-decoration: line-through;
+      }
+
+      &:after {
+        content: ' ₽';
+        font-weight: normal;
+      }
     }
 
     &_cross {
@@ -33,14 +41,34 @@
       transition-duration: 0.5s;
     }
 
-    &.active &_cross {
-      transform: rotate(0);
-    }
+    &.active &_cross {transform: rotate(0);}
   }
 }
 
-.row {
-  margin-bottom: 20px;
+.action {
+  font-size: 14px;
+
+  &__close:focus {
+    outline: none;
+  }
 }
 
-hr {margin: 0}
+.conditions { &__title {margin: 20px 0;} }
+
+.row {margin-bottom: 20px;}
+
+@media screen and (max-width: 420px) {
+  .list__item {font-size: 14px;}
+
+  .action {font-size: 12px;}
+}
+
+@media screen and (max-width: 380px) {
+  .list__item {
+    font-size: 12px;
+
+    &_price {margin-right: 10px;}
+  }
+
+  .action {font-size: 10px;}
+}

@@ -1,4 +1,4 @@
-@import '../../node_modules/bootstrap/scss/bootstrap';
+@import 'bootstrap/bootstrap';
 
 $font_color: #5c5c65;
 $border_color: #E0E0E0;
@@ -6,6 +6,7 @@ $border_color: #E0E0E0;
 body {
   display: flex;
   flex-direction: column;
+  font-family: Gotham, sans-serif;
 }
 
 .header {
@@ -91,7 +92,7 @@ body {
 
 .footer {
   background-color: #1d262d;
-  padding: 15px 0 20px 0;
+  padding: 15px 0 30px 0;
   border-top: 2px solid #CCC;
   color: white;
   flex-wrap: wrap;
@@ -102,18 +103,19 @@ body {
   }
 
   &__block {
-    margin-right: 30px;
+    margin-right: 50px;
+    font-size: 14px !important;
+    color: lighten(#869FB2, 20%);
 
     &.near {margin-right: 15px;}
 
     h1 {
-      margin: 10px 0;
+      margin: 10px 0 5px;
       font-size: 16px;
       color: #bac8d3;
     }
 
     a {
-      font-size: 14px !important;
       color: #869FB2 !important;
 
       &:hover {
@@ -124,7 +126,7 @@ body {
 
   &__copyright {
     position: absolute;
-    bottom: -10px;
+    bottom: -25px;
     right: 0;
     font-size: 14px;
     color: #869FB2;
@@ -170,8 +172,6 @@ body {
 // xxs?
 @media screen and (max-width: 450px) {
   .footer {
-    padding-bottom: 30px;
-
     &__copyright {
       bottom: -20px;
       font-size: 12px;
@@ -187,6 +187,18 @@ body {
 
   .toast {
     max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header__title {
+    font-size: 14px;
   }
 }
 

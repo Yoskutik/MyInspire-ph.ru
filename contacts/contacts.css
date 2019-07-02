@@ -1,0 +1,85 @@
+.contacts {
+  margin-top: 20px; }
+  .contacts__links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .contacts__link {
+    max-width: 35px;
+    margin: -10px 12px 0 0; }
+  .contacts__message_field {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: text; }
+    .contacts__message_field:after, .contacts__message_field:before {
+      display: block;
+      content: '';
+      width: 0;
+      border-top: 2px solid #3399FF;
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s; }
+    .contacts__message_field:after {
+      bottom: 1px; }
+    .contacts__message_field:before {
+      top: 1px;
+      left: 300px; }
+    .contacts__message_field:hover:after, .contacts__message_field:hover:before {
+      width: 300px; }
+    .contacts__message_field:hover:before {
+      left: 0; }
+    .contacts__message_field:hover > div:before {
+      top: 2px;
+      height: calc(100% - 5px); }
+    .contacts__message_field:hover > div:after {
+      height: calc(100% - 5px); }
+    .contacts__message_field > div:before, .contacts__message_field > div:after {
+      display: block;
+      content: '';
+      border-right: 2px solid #3399FF;
+      position: absolute;
+      -webkit-transition-duration: 0.3s;
+              transition-duration: 0.3s;
+      height: 0; }
+    .contacts__message_field > div:before {
+      left: 0;
+      top: calc(100% - 3px); }
+    .contacts__message_field > div:after {
+      left: 298px;
+      top: 2px; }
+  .contacts__message_input {
+    padding: 2px 5px;
+    width: 300px;
+    border: 1px solid #E0E0E0; }
+  .contacts__message_submit {
+    background: white;
+    width: 300px;
+    border: 1px solid #E0E0E0; }
+    .contacts__message_submit:focus {
+      outline: none; }
+  .contacts__message_error {
+    width: 300px;
+    font-size: 12px;
+    margin-top: 10px;
+    display: none; }
+  .contacts .loader {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 7px;
+    left: 300px;
+    display: none; }
+
+.intro__title {
+  margin: 10px 0 15px; }
+
+img.copy {
+  position: relative;
+  top: -2px;
+  cursor: pointer; }
+
+@media screen and (max-width: 767px) {
+  .contacts__column {
+    margin-bottom: 25px; } }
+
+/*# sourceMappingURL=contacts.css.map */

@@ -1,0 +1,80 @@
+.list {
+  margin-bottom: 20px;
+
+  &__item {
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    max-height: 56px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+
+    & > div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    &_price {
+      margin: 0 15px 0 auto;
+
+      .sale {
+        opacity: 0.8;
+        text-decoration: line-through;
+      }
+
+      &:after {
+        content: ' ₽';
+        font-weight: normal;
+      }
+    }
+
+    &_cross {
+      height: 23px;
+      width: 23px;
+      padding: 3px;
+      border: 1px solid #E0E0E0;
+      border-radius: 50%;
+      transform: rotate(45deg);
+      transition-duration: 0.5s;
+    }
+
+    &.active &_cross {transform: rotate(0);}
+  }
+}
+
+.action {
+  font-size: 14px;
+  padding: 12px 25px 12px 20px;
+
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 7px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.conditions { &__title {margin: 20px 0;} }
+
+.row {margin-bottom: 20px;}
+
+@media screen and (max-width: 420px) {
+  .list__item {font-size: 14px;}
+  .action {font-size: 12px;}
+}
+
+@media screen and (max-width: 380px) {
+  .list__item {
+    font-size: 12px;
+
+    &_price {margin-right: 10px;}
+  }
+
+  .action {font-size: 10px;}
+}

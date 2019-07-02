@@ -13,27 +13,27 @@
     max-height: max-content;
     -webkit-transition: 2s;
     transition: 2s; }
-  .portfolio__main, .portfolio__beauty {
+  .portfolio__individual, .portfolio__pair, .portfolio__beauty, .portfolio__retouch {
     padding: 20px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     width: 100%;
     -webkit-transition: cubic-bezier(0.5, -0.4, 0.5, 1.4) 1.3s;
     transition: cubic-bezier(0.5, -0.4, 0.5, 1.4) 1.3s; }
-  .portfolio__main_photos {
+  .portfolio__individual_photos, .portfolio__pair_photos, .portfolio__beauty_photos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px; }
-  .portfolio__main_photo {
+  .portfolio__individual_photo, .portfolio__pair_photo, .portfolio__beauty_photo {
     -webkit-transition-duration: 0.5s;
             transition-duration: 0.5s;
     margin-bottom: 20px; }
-    .portfolio__main_photo:hover {
+    .portfolio__individual_photo:hover, .portfolio__pair_photo:hover, .portfolio__beauty_photo:hover {
       -webkit-transform: scale(1.08, 1.08);
               transform: scale(1.08, 1.08); }
-    .portfolio__main_photo:last-child {
+    .portfolio__individual_photo:last-child, .portfolio__pair_photo:last-child, .portfolio__beauty_photo:last-child {
       margin-bottom: 0; }
-  .portfolio__beauty_photos {
+  .portfolio__retouch_photos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px; }
@@ -63,6 +63,10 @@
     opacity: 0.85;
     -webkit-box-shadow: inset 0 50px 35px -15px black;
             box-shadow: inset 0 50px 35px -15px black; }
+  .image-shower img {
+    max-height: 90%;
+    max-width: 90%;
+    z-index: 100; }
   .image-shower .paginator {
     z-index: 100;
     cursor: pointer; }
@@ -72,22 +76,37 @@
     .image-shower .paginator-right {
       margin-left: auto;
       margin-right: 10px; }
+  .image-shower .close {
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 28px; }
 
 @media screen and (max-width: 767px) {
-  .portfolio__main_photo:hover {
+  .portfolio__individual_photo:hover, .portfolio__pair_photo:hover, .portfolio__beauty_photo:hover {
     -webkit-transform: scale(1.05, 1.05);
             transform: scale(1.05, 1.05); } }
 @media screen and (max-width: 575px) {
-  .portfolio__main_photos {
+  .portfolio__individual_photos, .portfolio__pair_photos, .portfolio__beauty_photos {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px; }
-  .portfolio__main_photo:hover {
+  .portfolio__individual_photo:hover, .portfolio__pair_photo:hover, .portfolio__beauty_photo:hover {
     -webkit-transform: scale(1.03, 1.03);
             transform: scale(1.03, 1.03); }
-  .portfolio__beauty_photos {
+  .portfolio__retouch_photos {
     grid-template-columns: 1fr; }
 
   .image-shower .paginator {
-    display: none; } }
+    display: none; }
+
+  .navigation .nav-link {
+    padding: 6px 12px;
+    font-size: 14px; } }
+@media screen and (max-width: 410px) {
+  .navigation .nav-link {
+    padding: 4px 10px;
+    font-size: 13px; } }
 
 /*# sourceMappingURL=portfolio.css.map */

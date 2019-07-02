@@ -1,0 +1,58 @@
+<!DOCTYPE>
+<html lang="ru">
+<head>
+    <title>Для вас новое сообщение!</title>
+    <style>
+        .body {
+            margin: 0 auto;
+            width: 430px;
+            font-size: 14px;
+            border: 1px solid #E0E0E0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .body__message p {
+            text-align: justify;
+            padding: 10px 15px;
+            margin: 0;
+        }
+
+        hr {
+            border-color: #E0E0E0;
+            border-top: none;
+        }
+
+        small {font-size: 80%}
+        .body__message_subject {font-size: 16px}
+        .body__footer p {text-align: justify;}
+    </style>
+</head>
+<body>
+<table class="body">
+    <tr>
+        <td><b>Для Вас новое сообщение от: %%FROM_NAME%% <small>%%FROM_EMAIL%%</small></b></td>
+    </tr>
+    <tr>
+        <td><hr></td>
+    </tr>
+    <tr class="body__message">
+        <td>
+            <p>
+                <span class="body__message_subject">%%SUBJECT%%</span><br><br>
+                %%BODY%%
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td><hr></td>
+    </tr>
+    <tr class="body__footer">
+        <td>
+            <p>Сообщение отправлено автоматически с сайта <a href="http://%%SITE_NAME%%/contacts/">%%SITE_NAME%%</a></p>
+            <p>© 2019 %%SITE_NAME%%</p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
