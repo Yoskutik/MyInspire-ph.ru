@@ -11,44 +11,23 @@ $(window).ready(() => {
        $(e.target).addClass('active');
     });
 
-    $('.navigation__individual').on('click', () => {
-       $('.portfolio__beauty, .portfolio__individual, .portfolio__pair, .portfolio__retouch')
-           .css('transform', 'translateX(0)');
-       let height = $('.portfolio__individual_photos').height();
-       let padding = $('.portfolio__individual').css('padding').replace('px', '') || '20';
-       $('.portfolio__container').css('max-height', `${height + parseInt(padding) * 2}px`);
-    });
+    const types = ['individual', 'pair', 'beauty', 'retouch'];
+    for (let i in types) {
+        let type = types[i];
 
-    $('.navigation__pair').on('click', () => {
-       $('.portfolio__beauty, .portfolio__individual, .portfolio__pair, .portfolio__retouch')
-           .css('transform', 'translateX(-100%)');
-       let height = $('.portfolio__pair_photos').height();
-       let padding = $('.portfolio__pair').css('padding').replace('px', '') || '20';
-       $('.portfolio__container').css('max-height', `${height + parseInt(padding) * 2}px`);
-    });
-
-    $('.navigation__beauty').on('click', () => {
-        $('.portfolio__beauty, .portfolio__individual, .portfolio__pair, .portfolio__retouch')
-            .css('transform', 'translateX(-200%)');
-        let height = $('.portfolio__beauty_photos').height();
-        let padding = $('.portfolio__beauty').css('padding').replace('px', '') || '20';
-        $('.portfolio__container').css('max-height', `${height + parseInt(padding) * 2}px`);
-    });
-
-    $('.navigation__retouch').on('click', () => {
-        $('.portfolio__beauty, .portfolio__individual, .portfolio__pair, .portfolio__retouch')
-            .css('transform', 'translateX(-300%)');
-        let height = $('.portfolio__retouch_photos').height();
-        let padding = $('.portfolio__retouch').css('padding').replace('px', '');
-        $('.portfolio__container').css('max-height', `${height + parseInt(padding) * 2}px`);
-    });
+        $(`.navigation__${type}`).on('click', () => {
+            $('.portfolio__beauty, .portfolio__individual, .portfolio__pair, .portfolio__retouch')
+                .css('transform', `translateX(${i * -100}%)`);
+            let height = $(`.portfolio__${type}_photos`).height();
+            let padding = $(`.portfolio__${type}`).css('padding').replace('px', '') || '20';
+            $('.portfolio__container').css('max-height', `${height + parseInt(padding) * 2}px`);
+        });
+    }
 
     sleep(300).then(() => $('.nav-link.active').click());
 
     $('.image-shower .paginator-left').on('click', () => {
-        $('.image-shower .photo')
-            .attr('src', '')
-            .attr(
+        $('.image-shower .photo').attr('src', '').attr(
             'src',
             $(`.portfolio__${showedImageType}_photo[data-index=${($(`.portfolio__${showedImageType}_photo`).length + --showedImageInd) % $(`.portfolio__${showedImageType}_photo`).length}]`)
                 .attr('src').replace('-minify', '')
@@ -56,9 +35,7 @@ $(window).ready(() => {
     });
 
     $('.image-shower .paginator-right').on('click', () => {
-        $('.image-shower .photo')
-            .attr('src', '')
-            .attr(
+        $('.image-shower .photo').attr('src', '').attr(
             'src',
             $(`.portfolio__${showedImageType}_photo[data-index=${++showedImageInd % $(`.portfolio__${showedImageType}_photo`).length}]`)
                 .attr('src').replace('-minify', '')

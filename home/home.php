@@ -1,5 +1,8 @@
 <link rel="stylesheet" href="/home/home.css">
 <script src="/home/home.js"></script>
+<script>
+    let collageNumber = <?= count(glob(__DIR__. "/photos/*")) / 2 ?>;
+</script>
 
 <div class="row">
     <div class="collage col-lg-9 col-md-8">
@@ -18,7 +21,7 @@
             $r = rand(0, 2);
             for ($i = 0; $i < 3; $i++) {
                 if ($i == $r) { ?>
-                    <img alt="Фотография" class="big" src="/home/photos/collage/8-b.jpg">
+                    <img alt="Фотография" class="big" src="/home/photos/8-b.png">
                 <?php } else { ?>
                     <img alt="Фотография" class="big hidden">
                 <?php }
@@ -39,14 +42,14 @@
                         <small>г. Санкт-Петербург</small>
                     </p>
                     <a href="https://www.instagram.com/myinspire_ph/" class="card-link count-link" data-id="Instagram" target="_blank">
-                        <img src="/assets/icons/instagram.png" alt="Instagram" width="32">
+                        <?= HTML::render('instagram.svg', ['size' => 35], 'assets/icons') ?>
                     </a>
                     <a href="https://vk.com/inspiredbyspb" class="card-link count-link" target="_blank" data-id="VK">
-                        <img src="/assets/icons/vk.png" alt="VK" width="32">
+                        <?= HTML::render('vk.svg', ['size' => 35], 'assets/icons') ?>
                     </a>
                     <a class="card-link count-link" style="cursor: pointer" data-id="Telegram"
-                       onclick="copy('+7(999)512-42-17', 'Telegram', 'Номер телефона был скопирован')">
-                        <img src="/assets/icons/telegram.png" alt="Telegram" width="32">
+                       onclick="copy('+7(999)512-42-17', 'WhatsApp', 'Номер телефона был скопирован')">
+                        <?= HTML::render('whatsapp.svg', ['size' => 35], 'assets/icons') ?>
                     </a>
                 </div>
             </div>
@@ -59,7 +62,7 @@
 </div>
 <div class="row justify-content-center">
     <p class="col-md-5 text-justify">
-        Привет. Меня зовут Таня и я фотограф из прекрасного города
+        Привет. Меня зовут Таня, и я фотограф из прекрасного города
         на Неве. Фотографией занимаюсь сколько себя помню, однако в
         профессиональное русло это ушло около полутора лет назад. В
         свои работы я вкладываюсь на все 100%.
@@ -67,7 +70,8 @@
     <p class="col-md-5 text-justify">
         Я стараюсь, чтобы каждый человек раскрылся, работая со мной, и у
         него остались приятные воспоминания в виде фотографий от меня. <br>
-        Со всеми моими работами можно ознакомиться по <a href="/portfolio">ссылке</a>.
+        Со всеми моими работами в высоком разрешении можно ознакомиться
+        по <a href="/portfolio/">ссылке</a>.
     </p>
 </div>
 <hr class="row">
@@ -84,11 +88,11 @@
                 съёмки мы продумаем идею, подберём образ, локацию, и если
                 необходимо, то даже составим маршрут из нескольких мест для съёмок.
             </p>
-            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/collage/21.jpg">
-            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/collage/23-b.jpg">
-            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/collage/22.jpg">
-            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/collage/24.jpg">
-            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/collage/25.jpg">
+            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/21.png">
+            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/25-b.png">
+            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/22.png">
+            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/12.png">
+            <img alt="Индивидуальная фотография" class="individual__photo" src="/home/photos/3.png">
         </div>
     </div>
 </div>
@@ -106,11 +110,11 @@
                 ваши самые нежные и искренние чувства можно навсегда
                 запечатлеть на фотографии.
             </p>
-            <img alt="Парная фотография" class="pair__photo" src="/home/photos/pair/0.jpg">
-            <img alt="Парная фотография" class="pair__photo" src="/home/photos/pair/1.jpg">
-            <img alt="Парная фотография" class="pair__photo" src="/home/photos/pair/2.jpg">
-            <img alt="Парная фотография" class="pair__photo" src="/home/photos/pair/3.jpg">
-            <img alt="Парная фотография" class="pair__photo" src="/home/photos/pair/4.jpg">
+            <img alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/0.jpg">
+            <img alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/1-minify.jpg">
+            <img alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/2-minify.jpg">
+            <img alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/3-minify.jpg">
+            <img alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/4-minify.jpg">
         </div>
     </div>
 </div>

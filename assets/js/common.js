@@ -38,11 +38,17 @@ $(window).on('load', () => {
 });
 
 function toast(title, text) {
+    let lang = $('html').attr('lang');
+    let when;
+    if (lang === 'ru')
+        when = 'Только что';
+    else if (lang === 'en')
+        when = 'Right now';
     $('body').append(`
     <div class="toast">
         <div class="toast-header">
             <strong class="mr-auto">${title}</strong>
-            <small>Только что</small>
+            <small>${when}</small>
             <button type="button" class="ml-2 mb-1 close">
                 <span>&times;</span>
             </button>

@@ -1,3 +1,5 @@
+<?php require_once('HTML.php'); ?>
+
 <!DOCTYPE>
 <html lang="ru">
 <head>
@@ -8,11 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Атмосферные фото в Санкт-Петербурге от профессионального фотографа. Экспресс фотосессия от 2000р. Лавстори, фотопрогулка, студийная фотосессия и профессиональная ретушь ваших снимков.">
-    <script src="/assets/js/jquery-3.4.1.min.js"></script>
-    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/jquery-3.4.1.js"></script>
+    <script src="/assets/js/popper.js"></script>
     <script src="/assets/js/jquery.event.move.js"></script>
     <script src="/assets/js/jquery.twentytwenty.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/common.js"></script>
     <link rel="stylesheet" href="/assets/styles/common.css">
     <link rel="stylesheet" href="/assets/styles/twentytwenty.css">
@@ -50,8 +52,8 @@
         case '/home/':
             include 'home/home.php';
             break;
-        case (preg_match('/\/portfolio\/\??.*/', $_SERVER['REQUEST_URI']) ? true : false):
-            include 'portfolio/portflio.php';
+        case (preg_match('/^\/portfolio\/\??.*/', $_SERVER['REQUEST_URI']) ? true : false):
+            include 'portfolio/portfolio.php';
             break;
         case '/pricelist/':
             include 'pricelist/pricelist.php';
@@ -63,7 +65,10 @@
             include 'contacts/contacts.php';
             break;
         default:
-            echo '<b>File not exist</b>';
+            if (strpos($_SERVER['REQUEST_URI'], '/en/') === 0)
+                include 'en/fileNotFound.php';
+            else
+                include 'fileNotFound.php';
             break;
     }
     ?>

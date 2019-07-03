@@ -11,9 +11,13 @@ $(window).ready(() => {
        });
 
    $('.contacts__message_submit').on('click', e => {
+       let lang = $('html').attr('lang');
        e.preventDefault();
        if (Date.now() - a < 15000) {
-           toast('Электронная почта', 'Подождите некоторое время перед повторной отправкой сообщения');
+           if (lang ===  'ru')
+               toast('Электронная почта', 'Подождите некоторое время перед повторной отправкой сообщения');
+           else if (lang === 'en')
+               toast('E-mail', 'Wait a while before resending the message');
            return;
        }
        let name = $('[name=name]');
@@ -46,15 +50,24 @@ $(window).ready(() => {
            success: data => {
                if (data.status === 'OK') {
                    $('[name=name], [name=email], [name=subject], [name=body]').val('');
-                   toast('Электронная почта', 'Сообщение успешно доставленно');
+                   if (lang ===  'ru')
+                       toast('Электронная почта', 'Сообщение успешно доставленно');
+                   else if (lang === 'en')
+                       toast('E-mail', 'The message was successfully delivered');
                    a = Date.now();
                } else if (data.status === 'ERROR')
-                   toast('Электронная почта', 'При отправке сообщения возникли ошибки');
+                   if (lang ===  'ru')
+                       toast('Электронная почта', 'При отправке сообщения возникли ошибки');
+                   else if (lang === 'en')
+                       toast('E-mail', 'An error occurred while sending message');
                $('.loader').hide();
                $('.contacts__message_error').hide();
            },
            error: data => {
-               toast('Электронная почта', 'При отправке сообщения возникли ошибки');
+               if (lang ===  'ru')
+                   toast('Электронная почта', 'При отправке сообщения возникли ошибки');
+               else if (lang === 'en')
+                   toast('E-mail', 'An error occurred while sending message');
                $('.loader').hide();
                $('.contacts__message_error').hide();
            }

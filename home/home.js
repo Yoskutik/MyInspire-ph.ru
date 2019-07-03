@@ -11,10 +11,9 @@ $(window).ready(() => {
     let collagePhotos = new Set();
     collagePhotos.add(8);
     let updatesAt = [[0, 0, 0, 0], [0, 0, 0, 0]];
-    let collageNumber = 25;
     let i;
     for (i = 0; i < 8; i++) {
-        $('.small').eq(i).attr({src: `/home/photos/collage/${i}.jpg`});
+        $('.small').eq(i).attr({src: `/home/photos/${i}.png`});
         collagePhotos.add(i);
     }
 
@@ -33,9 +32,9 @@ $(window).ready(() => {
 
         while (true) {
             await sleep(2000);
-            let src = `/home/photos/collage/${++i % collageNumber}.jpg`;
+            let src = `/home/photos/${++i % collageNumber}.png`;
             while (collagePhotos.has(i % collageNumber)) {
-                src = `/home/photos/collage/${++i % collageNumber}.jpg`;
+                src = `/home/photos/${++i % collageNumber}.png`;
             }
             let rand = randomInteger(0, 7);
             let y = () => Math.floor(rand / 4);
@@ -72,7 +71,7 @@ $(window).ready(() => {
                 }
                 bigActivePhotos.add(rand - 5);
                 el.toggleClass('hidden');
-                el[0].src = src.replace('.jpg', '-b.jpg');
+                el[0].src = src.replace('.png', '-b.png');
 
                 updatesAt[y()][x() - 1] = Date.now();
                 updatesAt[y() - 1][x()] = Date.now();
@@ -102,7 +101,7 @@ $(window).ready(() => {
 
             collagePhotos = new Set();
             $('.small:not(.hidden), .big:not(.hidden)').each((j, val) => {
-                let ind = val.src.match(/\d+(-b)?\.jpg$/i)[0].replace('.jpg', '');
+                let ind = val.src.match(/\d+(-b)?\.png$/i)[0];
                 collagePhotos.add(parseInt(ind));
             });
         }
@@ -114,9 +113,6 @@ $(window).ready(() => {
             opacity: 0
         })
     });
-}).on('load', () =>  {
-    $(".beauty__photo").twentytwenty({no_overlay: true});
-    $(document).trigger('scroll');
 }).on('resize', () => {
     if (window.innerWidth < 768 && $('.commercial p').eq(1).text().length > 0) {
         $('.commercial p').eq(0).text(`${commercial0} ${commercial1}`);
@@ -126,6 +122,9 @@ $(window).ready(() => {
         $('.commercial p').eq(1).text(commercial1);
     }
 }).on('load', () => {
+    $(".beauty__photo").twentytwenty({no_overlay: true});
+    $(document).trigger('scroll');
+
     commercial0 = $('.commercial p').eq(0).text();
     commercial1 = $('.commercial p').eq(1).text();
     $(window).trigger('resize');

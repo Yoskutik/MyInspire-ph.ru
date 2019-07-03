@@ -6,13 +6,13 @@
 </div>
 <div class="row justify-content-center intro__text">
     <p class="col-md-5 text-justify">
-        Если вы ознакомились со всему ценами, прочли условия и осознали,
+        Если вы ознакомились со всеми ценами, прочли условия и осознали,
         что я - именно тот, кого Вы так давно искали, то скорее пишите мне
         в удобной Вам социальной сети и мы с Вами обсудим все детали.
     </p>
     <p class="col-md-5 text-justify">
         P. S. У меня не всегда бывает возможность моментально отвечать. Обычно
-        ответ занимает не больше суток. Прошу отнесись к этому с пониманием.
+        ответ занимает не больше суток. Прошу отнестись к этому с пониманием.
     </p>
 </div>
 <div class="row justify-content-center">
@@ -27,23 +27,23 @@
             <p>
                 <b>Свяжитесь со мной:</b><br>
                 E-mail: tatiana.mix.1910@gmail.com
-                <img class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="E-mail"
-                     onclick="copy('tatiana.mix.1910@gmail.com', 'Электронная почта', 'Адрес электронной почты был скопирован в буфер обмена')"><br>
+                <img alt="Копировать" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="E-mail"
+                     onclick="copy('tatiana.mix.1910@gmail.com', 'Электронная почта', 'Адрес электронной почты был скопирован')"><br>
                 Телефон: +7(999)515-42-17
-                <img class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="Phone"
-                     onclick="copy('+7(999)515-42-17', 'Телефон', 'Номер телефона был скопирован в буфер обмена')"><br>
+                <img alt="Копировать" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="Phone"
+                     onclick="copy('+7(999)515-42-17', 'Телефон', 'Номер телефона был скопирован')"><br>
                 Для связи в WhatsApp, Telegram
             </p>
             <p><b>Социальные сети:</b></p>
             <div class="contacts__links">
                 <a href="https://www.instagram.com/myinspire_ph/" target="_blank" data-id="Instagram" class="count-link">
-                    <img class="contacts__link" src="/assets/icons/instagram.png" alt="Instagram">
+                    <?= HTML::render('instagram.svg', ['size' => 35, 'className' => 'contacts__link'], 'assets/icons') ?>
                 </a>
                 <a href="https://vk.com/inspiredbyspb" target="_blank" data-id="VK" class="count-link">
-                    <img class="contacts__link" src="/assets/icons/vk.png" alt="VK">
+                    <?= HTML::render('vk.svg', ['size' => 35, 'className' => 'contacts__link'], 'assets/icons') ?>
                 </a>
                 <a href="https://www.pinterest.ru/tatianamix1910/" target="_blank" data-id="Pinterest" class="count-link">
-                    <img class="contacts__link" src="/assets/icons/pinterest.png" alt="Pinterest">
+                    <?= HTML::render('pinterest.svg', ['size' => 35, 'className' => 'contacts__link'], 'assets/icons') ?>
                 </a>
             </div>
         </div>
@@ -79,7 +79,7 @@
                 </div>
                 <input type="submit" value="Отправить" class="contacts__message_submit count-link" data-id="E-mail">
                 <p class="contacts__message_error empty text-danger">* Перед отправкой заполните, пожалуйста, все поля</p>
-                <p class="contacts__message_error email text-danger">* Адрес электронной почты не действителен</p>
+                <p class="contacts__message_error email text-danger">* Адрес электронной почты недействителен</p>
             </form>
         </div>
     </div>
