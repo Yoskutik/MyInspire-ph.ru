@@ -116,7 +116,7 @@
                         </a>
                     </div>
                     <span class="footer__copyright">
-                        &copy; 2019 MyInspire-ph.ru
+                        &copy; <?= date('Y') ?> MyInspire-ph.ru
                     </span>
                 </div>
             </div>
