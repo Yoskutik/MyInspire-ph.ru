@@ -22,7 +22,17 @@
 
       .sale {
         opacity: 0.8;
-        text-decoration: line-through;
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          border-bottom: 1px solid black;
+          top: 8px;
+          left: 1px;
+        }
       }
 
       &:after {

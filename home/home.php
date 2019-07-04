@@ -38,7 +38,7 @@
                     <h4 class="card-title">Мельникова Татьяна</h4>
                     <h6 class="card-subtitle mb-2 text-muted">Фотограф-ретушер</h6>
                     <p class="card-text">
-                        Индивидуальные съёмки, бьюти съёмки, love-story и high-end retouch.<br>
+                        Индивидуальные съёмки, бьюти съёмки, love-story и high-end ретушь.<br>
                         <small>г. Санкт-Петербург</small>
                     </p>
                     <a href="https://www.instagram.com/myinspire_ph/" class="card-link count-link" data-id="Instagram" target="_blank">

@@ -84,7 +84,7 @@
             <p class="individual__description text-justify">
                 Take a walk through the most beautiful places of St. Petersburg
                 with professional photographer, and get some amazing shots from it.
-                Before shooting, we will think over the idea, crate an image, choose
+                Before shooting, we will think over the idea, create an image, choose
                 location, and if it's necessary, even make a route of several places
                 for shooting.
             </p>
@@ -119,7 +119,7 @@
 </div>
 <hr class="row">
 <div class="row">
-    <h2 class="title text-center">Beauty съёмка</h2>
+    <h2 class="title text-center">Beauty photo shooting</h2>
 </div>
 <div class="row justify-content-center">
     <div class="col-md-9">

@@ -23,7 +23,8 @@
                 search for a location or Studio<br>
                 45-60 minutes of shooting<br>
                 35 best photos in color correction<br>
-                7 photos in retouching
+                10 photos in retouching<br><br>
+                Prepayment: 1000₽.
             </p>
         </div>
         <div class="list__item">
@@ -38,7 +39,8 @@
                 search for a location or Studio<br>
                 60 minutes of shooting<br>
                 40 best photos in color correction
-                8 photos in retouching
+                10 photos in retouching<br><br>
+                Prepayment: 1000₽.
             </p>
         </div>
         <div class="list__item">
@@ -53,7 +55,8 @@
                 search for a location or Studio<br>
                 20-30 minutes of shooting<br>
                 20 best photos in color correction
-                3 photos in retouching
+                3 photos in retouching<br><br>
+                Prepayment: 1000₽.
             </p>
         </div>
         <div class="list__item">
@@ -67,7 +70,7 @@
                 one-hour photo Studio rental<br>
                 services of a professional makeup artist<br>
                 15 photos in a magazine of retouching on your choice<br><br>
-                Prepayment - 50%.
+                Prepayment: 3000₽.
             </p>
         </div>
         <div class="list__item">
@@ -100,7 +103,7 @@
 
             I select photos for retouching myself.<br><br>
 
-            I do not give the original pictures, as it is a "draft", but if
+            I do not give the original pictures, as it is a “draft”, but if
             you really want to get them, it can be done for a fee of 500 rubles
             (the pictures can be obtained only for a week from the day of shooting).<br><br>
 

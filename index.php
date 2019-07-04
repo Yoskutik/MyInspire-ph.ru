@@ -116,8 +116,8 @@
                         </a>
                     </div>
                     <span class="footer__copyright">
-                            &copy; 2019 MyInspire.com
-                        </span>
+                        &copy; 2019 MyInspire-ph.ru
+                    </span>
                 </div>
             </div>
         </div>

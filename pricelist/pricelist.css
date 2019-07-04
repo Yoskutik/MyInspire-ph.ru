@@ -23,7 +23,15 @@
       margin: 0 15px 0 auto; }
       .list__item_price .sale {
         opacity: 0.8;
-        text-decoration: line-through; }
+        position: relative; }
+        .list__item_price .sale:before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          border-bottom: 1px solid black;
+          top: 8px;
+          left: 1px; }
       .list__item_price:after {
         content: ' ₽';
         font-weight: normal; }
