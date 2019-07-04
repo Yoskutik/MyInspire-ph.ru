@@ -6,6 +6,7 @@
     <script>console.time('Loaded');</script>
     <title>MyInspire photographer</title>
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <meta name="yandex-verification" content="b7f1d9066576b9e4" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">

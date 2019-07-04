@@ -16,14 +16,12 @@ try {
             'YEAR' => date('Y'),
         ],
         'api/patterns');
-    $headers = "From: Татьяна <tatiana@myinspire-ph.ru>" . "\r\n" .
-        "Reply-To: <tatiana@myinspire-ph.ru>" . "\r\n" .
+    $headers = "From: {$_POST['name']} <{$_POST['email']}>" . "\r\n" .
+        "Reply-To: <{$_POST['email']}>" . "\r\n" .
         'Content-type: text/html; charset=UTF-8' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     $status = mail($to, $subject, $body, $headers);
-
-    mail($to, $subject, $body, "From: {$_POST['name']} <{$_POST['email']}>\r\nReply-To: <{$_POST['email']}>\r\nContent-type: text/html; charset=UTF-8\r\nX-Mailer: PHP/" . phpversion());
 } catch (Error $e) {
     if ($e) $status = !!$e;
 }
