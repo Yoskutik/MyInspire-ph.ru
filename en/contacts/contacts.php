@@ -27,10 +27,10 @@
             <h4 class="">Contacts</h4>
             <p>
                 <b>Contact me:</b><br>
-                E-mail: tatiana.mix.1910@gmail.com
+                E-mail: <a href="mailto:tatiana@myinspire-ph.ru" class="count-link" data-id="E-mail">tatiana@myinspire-ph.ru</a>
                 <img alt="Copy" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="E-mail"
-                     onclick="copy('tatiana.mix.1910@gmail.com', 'E-mail', 'The email address was copied')"><br>
-                Phone: +7(999)515-42-17
+                     onclick="copy('tatiana@myinspire-ph.ru', 'E-mail', 'The email address was copied')"><br>
+                Phone: <a href="tel:+7(999)515-42-17" class="count-link" data-id="Phone">+7(999)515-42-17</a>
                 <img alt="Copy" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="Phone"
                      onclick="copy('+7(999)515-42-17', 'Phone', 'The phone number was copied')"><br>
                 For communication in WhatsApp, Telegram

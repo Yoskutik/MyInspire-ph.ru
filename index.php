@@ -96,22 +96,25 @@
                         <h1>Contacts</h1>
                         <a target="_blank" href="https://www.instagram.com/myinspire_ph/" data-id="Instagram" class="count-link">
                             Instagram
-                        </a><br>
+                        </a>
+                        <br>
                         <a target="_blank" href="https://vk.com/inspiredbyspb" data-id="VK" class="count-link">
                             VK
-                        </a><br>
-                        <a onclick="copy('+7(999)512-42-17', 'Telegram', 'Номер телефона был скопирован')"
-                           data-id="Telegram" class="count-link" style="cursor: pointer">
+                        </a>
+                        <br>
+                        <a href="https://telegramm.online/#/im?p=u715237458_9117853563131773346" data-id="Telegram" class="count-link">
                             Telegram
-                        </a><br>
-                        <a onclick="copy('+7(999)512-42-17', 'WhatsApp', 'Номер телефона был скопирован')"
-                           data-id="WhatsApp" class="count-link" style="cursor: pointer">
+                        </a>
+                        <br>
+                        <a href="https://wa.me/79995154217" data-id="WhatsApp" class="count-link">
                             WhatsApp
-                        </a><br>
+                        </a>
+                        <br>
                         <a onclick="copy('tatiana.mix.1910@gmail.com', 'Электронная почта', 'Адрес электронной почты был скопирован в буфер обмена')"
                            style="cursor: pointer" data-id="E-mail" class="count-link">
                             E-mail
-                        </a><br>
+                        </a>
+                        <br>
                         <a target="_blank" href="https://www.pinterest.ru/tatianamix1910/" data-id="Pinterest" class="count-link">
                             Pinterest
                         </a>

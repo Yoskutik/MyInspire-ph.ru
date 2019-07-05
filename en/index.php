@@ -96,12 +96,10 @@
                         <a target="_blank" href="https://vk.com/inspiredbyspb" data-id="VK" class="count-link">
                             VK
                         </a><br>
-                        <a onclick="copy('+7(999)512-42-17', 'Telegram', 'The phone number was copied')"
-                           data-id="Telegram" class="count-link" style="cursor: pointer">
+                        <a href="https://telegramm.online/#/im?p=u715237458_9117853563131773346" data-id="Telegram" class="count-link">
                             Telegram
                         </a><br>
-                        <a onclick="copy('+7(999)512-42-17', 'WhatsApp', 'The phone number was copied')"
-                           data-id="WhatsApp" class="count-link" style="cursor: pointer">
+                        <a href="https://wa.me/79995154217" data-id="WhatsApp" class="count-link">
                             WhatsApp
                         </a><br>
                         <a onclick="copy('tatiana.mix.1910@gmail.com', 'Email', 'The email address was copied')"

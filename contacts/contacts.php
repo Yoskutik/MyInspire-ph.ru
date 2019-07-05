@@ -26,10 +26,10 @@
             <h4 class="">Контакты</h4>
             <p>
                 <b>Свяжитесь со мной:</b><br>
-                E-mail: tatiana.mix.1910@gmail.com
+                E-mail: <a href="mailto:tatiana@myinspire-ph.ru" class="count-link" data-id="E-mail">tatiana@myinspire-ph.ru</a>
                 <img alt="Копировать" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="E-mail"
-                     onclick="copy('tatiana.mix.1910@gmail.com', 'Электронная почта', 'Адрес электронной почты был скопирован')"><br>
-                Телефон: +7(999)515-42-17
+                     onclick="copy('tatiana@myinspire-ph.ru', 'Электронная почта', 'Адрес электронной почты был скопирован')"><br>
+                Телефон: <a href="tel:+7(999)515-42-17" class="count-link" data-id="Phone">+7(999)515-42-17</a>
                 <img alt="Копировать" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="Phone"
                      onclick="copy('+7(999)515-42-17', 'Телефон', 'Номер телефона был скопирован')"><br>
                 Для связи в WhatsApp, Telegram

@@ -47,8 +47,7 @@
                     <a href="https://vk.com/inspiredbyspb" class="card-link count-link" target="_blank" data-id="VK">
                         <?= HTML::render('vk.svg', ['size' => 35], 'assets/icons') ?>
                     </a>
-                    <a class="card-link count-link" style="cursor: pointer" data-id="Telegram"
-                       onclick="copy('+7(999)512-42-17', 'WhatsApp', 'Номер телефона был скопирован')">
+                    <a class="card-link count-link" data-id="WhatsApp" href="https://wa.me/79995154217">
                         <?= HTML::render('whatsapp.svg', ['size' => 35], 'assets/icons') ?>
                     </a>
                 </div>
