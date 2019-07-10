@@ -14,7 +14,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Индивидуальная съемка</b>
-                <b class="list__item_price">2500</b>
+                <b class="list__item_price">3000</b>
 <!--                <b class="list__item_price">2500 <span class="sale">3000</span></b>-->
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
@@ -30,7 +30,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Парная съемка</b>
-                <b class="list__item_price">2000</b>
+                <b class="list__item_price">3500</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -45,7 +45,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Экспресс съемка</b>
-                <b class="list__item_price">1700</b>
+                <b class="list__item_price">2000</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -60,7 +60,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Бьюти съемка</b>
-                <b class="list__item_price">6500</b>
+                <b class="list__item_price">8000</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
