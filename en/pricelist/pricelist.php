@@ -2,19 +2,20 @@
 <script src="/pricelist/pricelist.js"></script>
 
 <div class="row justify-content-center">
-    <div class="col-md-10">
-        <div class="action alert alert-warning" role="alert">
-            * Prices for summer photo sessions are valid until 10.07.2019
-            <button type="button" class="action__close close" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-        </div>
-    </div>
+<!--    <div class="col-md-10">-->
+<!--        <div class="action alert alert-warning" role="alert">-->
+<!--            * Prices for summer photo sessions are valid until 10.07.2019-->
+<!--            <button type="button" class="action__close close" aria-label="Close">-->
+<!--                <span aria-hidden="true">×</span>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="col-md-10 list">
         <div class="list__item">
             <div>
                 <b class="list__item_title">Individual photo shooting</b>
-                <b class="list__item_price">2500 <span class="sale">3000</span></b>
+                <b class="list__item_price">3000</b>
+<!--                <b class="list__item_price">2500 <span class="sale">3000</span></b>-->
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -30,7 +31,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Love-story</b>
-                <b class="list__item_price">2000 <span class="sale">3500</span></b>
+                <b class="list__item_price">3500</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -46,7 +47,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Express photo shooting</b>
-                <b class="list__item_price">1700 <span class="sale">2000</span></b>
+                <b class="list__item_price">2000</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -62,7 +63,7 @@
         <div class="list__item">
             <div>
                 <b class="list__item_title">Beauty photo shooting</b>
-                <b class="list__item_price">6500 <span class="sale">8000</span></b>
+                <b class="list__item_price">8000</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
