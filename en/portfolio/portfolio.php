@@ -14,24 +14,6 @@ function render($str) {
 }
 ?>
 
-<link rel="stylesheet" href="/portfolio/portfolio.css">
-<script src="/assets/js/jquery.touchSwipe.min.js"></script>
-<script src="/portfolio/portfolio.js"></script>
-
-<style>
-    .portfolio__individual, .portfolio__pair, .portfolio__beauty, .portfolio__retouch {
-    <?php
-    $link = $_GET['link'];
-    if ($link === 'beauty') echo 'transform: translateX(-100%)';
-    else if ($link === 'pair') echo 'transform: translateX(-200%)';
-    else if ($link === 'retouch') echo 'transform: translateX(-300%)';
-    else {
-        $link = 'individual';
-        echo 'transform: translateX(0)';
-    } ?>
-    }
-</style>
-
 <div class="image-shower" style="display: none">
     <div class="loader">
         <div class="spinner-border text-light" role="status">

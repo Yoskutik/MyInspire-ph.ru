@@ -30,8 +30,6 @@ function createStudio($name, $contacts, $halls_list) {
 }
 ?>
 
-<link rel="stylesheet" href="/pricelist/studio/studio.css">
-
 <div class="row justify-content-center">
     <div class="col-md-10 list">
         <?= createStudio(

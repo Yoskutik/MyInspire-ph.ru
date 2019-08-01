@@ -1,9 +1,3 @@
-<link rel="stylesheet" href="/home/home.css">
-<script src="/home/home.js"></script>
-<script>
-    let collageNumber = <?= count(glob(__DIR__ . "/../../home/photos/*")) / 2 ?>;
-</script>
-
 <div class="row">
     <div class="collage col-lg-9 col-md-8">
         <div class="collage__block">

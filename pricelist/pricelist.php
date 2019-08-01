@@ -1,15 +1,13 @@
-<link rel="stylesheet" href="/pricelist/pricelist.css">
-<script src="/pricelist/pricelist.js"></script>
-
 <div class="row justify-content-center">
-<!--    <div class="col-md-10">-->
-<!--        <div class="action alert alert-warning" role="alert">-->
-<!--            * Цена действительна на летние фотосессии при бронировании до 10.07.2019-->
-<!--            <button type="button" class="action__close close" aria-label="Close">-->
-<!--                <span aria-hidden="true">×</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="col-md-10">
+        <div class="action alert alert-success" role="alert">
+            При бронировании фотосессии в августе Вы получаете
+            20-секундное видео совершенно бесплатно!
+            <button type="button" class="action__close close" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
     <div class="col-md-10 list">
         <div class="list__item">
             <div>

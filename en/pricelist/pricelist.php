@@ -1,15 +1,13 @@
-<link rel="stylesheet" href="/pricelist/pricelist.css">
-<script src="/pricelist/pricelist.js"></script>
-
 <div class="row justify-content-center">
-<!--    <div class="col-md-10">-->
-<!--        <div class="action alert alert-warning" role="alert">-->
-<!--            * Prices for summer photo sessions are valid until 10.07.2019-->
-<!--            <button type="button" class="action__close close" aria-label="Close">-->
-<!--                <span aria-hidden="true">×</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="col-md-10">
+        <div class="action alert alert-success" role="alert">
+            When you book a photo shoot in August,
+            you get a 20-second video for free!
+            <button type="button" class="action__close close" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
     <div class="col-md-10 list">
         <div class="list__item">
             <div>

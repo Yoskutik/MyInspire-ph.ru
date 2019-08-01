@@ -1,6 +1,3 @@
-<link rel="stylesheet" href="/contacts/contacts.css">
-<script src="/contacts/contacts.js"></script>
-
 <div class="row">
     <h3 class="col-md-12 text-center intro__title">О записи на съёмку</h3>
 </div>
