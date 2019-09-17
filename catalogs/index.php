@@ -47,6 +47,10 @@
     <a target="_blank" title="Каталог сайтов manyweb.ru" href="http://manyweb.ru">Manyweb.ru - каталог сайтов магазинов</a>
     <br><br>
     <a href="http://www.relevantdirectory.ru/northwest/st-petersburg/arts/">Культура и искусство -  каталог сайтов фирм и компаний, Санкт-Петербург</a> - Каталог компаний, фирм и веб-сайтов России, Санкт-Петербург. Добавить сайт в каталог Фотография, Культура и искусство, Санкт-Петербург.
+    <br><br>
+    <a href="http://www.vsego.ru" title="Каталог сайтов Всего.RU" target="_blank">
+        <img src="http://www.vsego.ru/images/bkat8831.gif" alt="Каталог сайтов Всего.RU" border="0" width="88" height="31"></a>
+    п
 </div>
 <?php include '../assets/elements/footer.php' ?>
 </body>
