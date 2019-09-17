@@ -78,3 +78,13 @@
 
   .action {font-size: 10px;}
 }
+
+.__additional_shots:before {
+  content: 'Ретушь дополнительных кадров'
+}
+
+@media screen and (max-width: 450px) {
+  .__additional_shots:before {
+    content: 'Ретушь доп. кадров'
+  }
+}

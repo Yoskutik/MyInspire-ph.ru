@@ -1,3 +1,14 @@
+<style>
+    .__additional_shots:before {
+        content: 'Ретушь дополнительных кадров'
+    }
+
+    @media screen and (max-width: 450px) {
+        .__additional_shots:before {
+            content: 'Ретушь доп. кадров'
+        }
+    }
+</style>
 <div class="row justify-content-center">
     <div class="col-md-10">
         <div class="action alert alert-success" role="alert">

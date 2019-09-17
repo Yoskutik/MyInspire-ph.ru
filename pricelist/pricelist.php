@@ -56,7 +56,8 @@
         </div>
         <div class="list__item">
             <div>
-                <b class="list__item_title">Ретушь дополнительных кадров</b>
+                <!-- NOT A COUSTIL -->
+                <b class="list__item_title __additional_shots"></b>
                 <b class="list__item_price">от 400</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>

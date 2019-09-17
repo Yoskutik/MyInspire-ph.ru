@@ -3,28 +3,38 @@
   grid-template-columns: 1fr 200px;
   grid-template-rows: 1fr auto;
   grid-column-gap: 20px;
-  margin-top: 20px; }
-  .list__item_title {
-    font-size: 24px; }
-  .list__item_contacts {
-    font-size: 16px; }
-  .list__item_rooms {
-    padding-left: 20px; }
-  .list__item:after {
-    content: '';
-    display: block;
-    width: 100%;
-    border-bottom: 1px solid #E0E0E0;
-    grid-column: 1/3; }
-  .list__item:last-child:after {
-    display: none; }
+  margin-top: 20px;
+}
+.list__item_title {
+  font-size: 24px;
+}
+.list__item_contacts {
+  font-size: 16px;
+}
+.list__item_rooms {
+  padding-left: 20px;
+}
+.list__item:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #E0E0E0;
+  grid-column: 1/3;
+}
+.list__item:last-child:after {
+  display: none;
+}
 
 @media screen and (max-width: 575px) {
   .list__item {
-    grid-column-gap: 10px; }
-    .list__item_title {
-      font-size: 18px; }
-    .list__item_contacts, .list__item_rooms {
-      font-size: 14px; } }
+    grid-column-gap: 10px;
+  }
+  .list__item_title {
+    font-size: 18px;
+  }
+  .list__item_contacts, .list__item_rooms {
+    font-size: 14px;
+  }
+}
 
 /*# sourceMappingURL=studio.css.map */

@@ -12,9 +12,9 @@
                     <div class="footer__block">
                         <h1>Developer</h1>
                         <a href="https://www.github.com/yoskutik" target="_blank">Yoskutik</a><br><br>
-                        <h1>Language</h1>
-                        <a href="/">Русский</a><br>
-                        <a href="/en/">English</a>
+<!--                        <h1>Language</h1>-->
+<!--                        <a href="/">Русский</a><br>-->
+<!--                        <a href="/en/">English</a>-->
                     </div>
                     <div class="footer__block near">
                         <h1>Contacts</h1>
