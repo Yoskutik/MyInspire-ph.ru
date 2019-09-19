@@ -50,7 +50,6 @@
     <br><br>
     <a href="http://www.vsego.ru" title="Каталог сайтов Всего.RU" target="_blank">
         <img src="http://www.vsego.ru/images/bkat8831.gif" alt="Каталог сайтов Всего.RU" border="0" width="88" height="31"></a>
-    п
 </div>
 <?php include '../assets/elements/footer.php' ?>
 </body>
