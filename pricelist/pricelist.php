@@ -57,14 +57,14 @@
         <div class="list__item">
             <div>
                 <!-- NOT A COUSTIL -->
-                <b class="list__item_title __additional_shots"></b>
+                <b class="list__item_title __additional_shots">Ретушь дополнительных кадров</b>
                 <b class="list__item_price">от 400</b>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
                 Ретушь фотографий - комплексный процесс. В зависимости от Ваших
                 целей, цена ретуши может варьироваться. Минимальная цена за
-                редактирование одной фотографии - 500 рублей.
+                редактирование одной фотографии - 400 рублей.
             </p>
         </div>
     </div>

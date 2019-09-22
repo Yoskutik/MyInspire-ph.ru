@@ -15,4 +15,14 @@ $(window).ready(() => {
     });
 
     $('.action__close').on('click', () => $('.action').hide());
+
+    $(window)
+        .on('resize', () => {
+            if (window.innerWidth <= 450 && $('.__additional_shots').text() === 'Ретушь дополнительных кадров') {
+                $('.__additional_shots').text('Ретушь доп. кадров');
+            } else if (window.innerWidth > 450 && $('.__additional_shots').text() === 'Ретушь доп. кадров') {
+                $('.__additional_shots').text('Ретушь дополнительных кадров');
+            }
+        })
+        .trigger('resize');
 });

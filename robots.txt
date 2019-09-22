@@ -3,7 +3,6 @@ Allow: /
 Disallow : /api/
 Disallow : /assets/
 Disallow : /pricelist/studio/
-Disallow : /catalogs/
 Host: https://MyInspire-ph.ru
 Sitemap: https://MyInspire-ph.ru/sitemap.xml
 Crawl-delay: 3
