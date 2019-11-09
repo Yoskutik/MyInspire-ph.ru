@@ -1,8 +1,6 @@
 $(window).ready(() => {
-    $('.list__item').on('click', e => {
-        let el =  $(e.target);
-        while (!el.hasClass('list__item'))
-            el = el.parent();
+    $('.list__item').on('click', function() {
+        let el =  $(this);
         if (!el.hasClass('active')) {
             let height =
                 parseInt(el.css('height').replace('px', '')) +
@@ -16,13 +14,17 @@ $(window).ready(() => {
 
     $('.action__close').on('click', () => $('.action').hide());
 
-    $(window)
-        .on('resize', () => {
-            if (window.innerWidth <= 450 && $('.__additional_shots').text() === 'Ретушь дополнительных кадров') {
-                $('.__additional_shots').text('Ретушь доп. кадров');
-            } else if (window.innerWidth > 450 && $('.__additional_shots').text() === 'Ретушь доп. кадров') {
-                $('.__additional_shots').text('Ретушь дополнительных кадров');
-            }
-        })
-        .trigger('resize');
+    $('.faq__block').on('click', function() {
+        let el = $(this);
+        if (el[0].offsetHeight <= el.find('.faq__block_title')[0].offsetHeight + 15) {
+            el.find('.faq__block_arrow').css('transform', 'rotate(180deg)');
+            el.css('max-height',
+                el.find('.faq__block_title')[0].offsetHeight +
+                el.find('p')[0].offsetHeight +
+                parseInt(el.css('padding-bottom').replace('px', '')) * 2 + 'px');
+        } else {
+            el.find('.faq__block_arrow').css('transform', 'rotate(0deg)');
+            el.css('max-height', el.find('.faq__block_title')[0].offsetHeight + 15 + 'px');
+        }
+    }).trigger('click');
 });

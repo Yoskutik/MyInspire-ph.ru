@@ -29,6 +29,8 @@
         content: ' ₽';
         font-weight: normal;
       }
+
+      &.__empty:after{content: '';}
     }
 
     &_cross {
@@ -60,21 +62,74 @@
   }
 }
 
-.conditions { &__title {margin: 20px 0;} }
+.conditions {
+  &__title {margin: 20px 0;}
+
+  &__text {
+    text-align: justify;
+    text-indent: 2em;
+    margin-bottom: 12px;
+  }
+}
+
+.faq {
+  margin-top: 10px;
+  max-width: 600px;
+
+  &__block {
+    transition-duration: 1s;
+    overflow: hidden;
+    padding: 8px 15px;
+    border: 1px solid #E0E0E0;
+    margin: -1px;
+    cursor: pointer;
+
+    &_title {
+      position: relative;
+      display: block;
+      padding-right: 15px;
+    }
+
+    &_arrow {
+      position: absolute;
+      top: 10px;
+      right: 0;
+
+      &:before, &:after {
+        display: block;
+        content: '';
+        width: 10px;
+        height: 3px;
+        background: #E0E0E0;
+        position: relative;
+      }
+
+      &:before {
+        transform: rotate(45deg);
+        left: -3px;
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+        right: -3px;
+        top: -3px;
+      }
+    }
+  }
+}
 
 .row {margin-bottom: 20px;}
 
-@media screen and (max-width: 420px) {
-  .list__item {font-size: 14px;}
-  .action {font-size: 12px;}
-}
-
-@media screen and (max-width: 380px) {
-  .list__item {
-    font-size: 12px;
-
-    &_price {margin-right: 10px;}
+@media screen and (max-width: 450px) {
+  .conditions {
+    &__title {font-size: 24px;}
+    &__text {font-size: 14px;}
   }
 
-  .action {font-size: 10px;}
+  .faq {
+    &__title {font-size: 24px;}
+    p {font-size: 14px;}
+  }
+  .list__item {font-size: 14px;}
+  .action {font-size: 12px;}
 }

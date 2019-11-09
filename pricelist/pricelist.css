@@ -28,6 +28,9 @@
   content: " ₽";
   font-weight: normal;
 }
+.list__item_price.__empty:after {
+  content: "";
+}
 .list__item_cross {
   height: 23px;
   width: 23px;
@@ -57,30 +60,77 @@
 .conditions__title {
   margin: 20px 0;
 }
+.conditions__text {
+  text-align: justify;
+  text-indent: 2em;
+  margin-bottom: 12px;
+}
+
+.faq {
+  margin-top: 10px;
+  max-width: 600px;
+}
+.faq__block {
+  transition-duration: 1s;
+  overflow: hidden;
+  padding: 8px 15px;
+  border: 1px solid #E0E0E0;
+  margin: -1px;
+  cursor: pointer;
+}
+.faq__block_title {
+  position: relative;
+  display: block;
+  padding-right: 15px;
+}
+.faq__block_arrow {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.faq__block_arrow:before, .faq__block_arrow:after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 3px;
+  background: #E0E0E0;
+  position: relative;
+}
+.faq__block_arrow:before {
+  transform: rotate(45deg);
+  left: -3px;
+}
+.faq__block_arrow:after {
+  transform: rotate(-45deg);
+  right: -3px;
+  top: -3px;
+}
 
 .row {
   margin-bottom: 20px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
+  .conditions__title {
+    font-size: 24px;
+  }
+  .conditions__text {
+    font-size: 14px;
+  }
+
+  .faq__title {
+    font-size: 24px;
+  }
+  .faq p {
+    font-size: 14px;
+  }
+
   .list__item {
     font-size: 14px;
   }
 
   .action {
     font-size: 12px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .list__item {
-    font-size: 12px;
-  }
-  .list__item_price {
-    margin-right: 10px;
-  }
-
-  .action {
-    font-size: 10px;
   }
 }
 
