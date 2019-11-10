@@ -42,17 +42,6 @@ function createStudio($name, $contacts, $halls_list) {
             ['href' => 'https://vk.com/market-80652199?section=album_2&w=product-80652199_1704192%2Fquery', 'name' => 'Studio C'],
         ]) ?>
         <?= createStudio(
-            'POLYGON Photo Manufactory', [
-            'address' => 'м. Площадь Ленина, ул. Михайлова, д. 21, территория завода Арсенал',
-            'phone' => '+7(812)777-02-47',
-            'site' => ['href' => 'https://www.polygonphoto.ru/', 'name' => 'PolygonPhoto.ru'],
-        ], [
-            ['href' => 'https://polygonphoto.ru/booking/rooms/apartamenti/', 'name' => 'Апартаменты'],
-            ['href' => 'https://polygonphoto.ru/booking/rooms/ring/', 'name' => 'Ринг'],
-            ['href' => 'https://polygonphoto.ru/booking/rooms/teksturnyi-zal/', 'name' => 'Текстурный'],
-            ['href' => 'https://polygonphoto.ru/booking/rooms/loft/', 'name' => 'Циклорама-лофт'],
-        ]) ?>
-        <?= createStudio(
             'Pavilion', [
             'address' => 'м. Чкаловская, ул Гатчинская, д. 28, вход №4',
             'phone' => '+7(921)449-59-38',
@@ -68,6 +57,7 @@ function createStudio($name, $contacts, $halls_list) {
             ['href' => 'https://vk.com/market-133756115?w=product-133756115_1692010', 'name' => 'Манхэттен'],
             ['href' => 'https://vk.com/market-133756115?w=product-133756115_2716816', 'name' => 'Новый'],
             ['href' => 'https://vk.com/market-133756115?w=product-133756115_1765584', 'name' => 'Амстердам'],
+            ['href' => 'https://vk.com/market-133756115?w=product-133756115_2791641_9f16ea70fe8bc0dd79', 'name' => 'Лифт/Мансарда'],
         ]) ?>
         <?= createStudio(
             'Liberty Studio', [
@@ -92,6 +82,28 @@ function createStudio($name, $contacts, $halls_list) {
             ['href' => 'http://skypointstudio.ru/greyroom', 'name' => 'Grey Room'],
             ['href' => 'http://skypointstudio.ru/balconyroom', 'name' => 'Balcony Room'],
             ['href' => 'http://skypointstudio.ru/lower', 'name' => 'Нижний'],
+        ]) ?>
+        <?= createStudio(
+            'Grace studio', [
+            'site' => ['href' => 'https://vk.com/gracestudiospb', 'name' => 'Grace studio'],
+        ], [
+            ['href' => 'https://vk.com/market-156958510?w=product-156958510_2389260_8170a5a4424577fd92', 'name' => 'Большой зал'],
+            ['href' => 'https://vk.com/market-156958510?w=product-156958510_2389254_1c698c3efb2db05850', 'name' => 'Маленький зал'],
+        ]) ?>
+        <?= createStudio(
+            'Studio 212', [
+            'site' => ['href' => 'https://st212.com/', 'name' => 'Studio 212'],
+        ], [
+            ['href' => 'https://st212.com/studio/6', 'name' => '51 ST.'],
+            ['href' => 'https://st212.com/studio/8', 'name' => '96 ST.'],
+            ['href' => 'https://st212.com/studio/5', 'name' => '59 ST.'],
+        ]) ?>
+        <?= createStudio(
+            'Kap\'s Rental Studios', [
+            'site' => ['href' => 'https://vk.com/kapsstudios', 'name' => 'Kap\'s Rental Studios'],
+        ], [
+            ['href' => 'https://vk.com/market-52713672?w=product-52713672_3473102', 'name' => 'Студия 103'],
+            ['href' => 'https://vk.com/market-52713672?w=product-52713672_3473094', 'name' => 'Студия 101'],
         ]) ?>
     </div>
 </div>

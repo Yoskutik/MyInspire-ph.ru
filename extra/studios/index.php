@@ -1,9 +1,9 @@
 <!DOCTYPE>
 <html lang="ru">
 <head>
-    <title>MyInspire. Фотограф в Санкт-Петербурге.</title>
+    <title>Проверенные студии</title>
     <?php include '../../assets/elements/head.php' ?>
-    <link rel="stylesheet" href="/pricelist/studio/studio.css">
+    <link rel="stylesheet" href="/extra/studio.css">
 </head>
 <body>
 <div class="loader main-loader">
@@ -13,7 +13,7 @@
 </div>
 <?php include('../../assets/elements/header.php') ?>
 <div class="body container">
-    <?php include 'studio.php' ?>
+    <?php include 'studios.php' ?>
 </div>
 <?php include '../../assets/elements/footer.php' ?>
 </body>
