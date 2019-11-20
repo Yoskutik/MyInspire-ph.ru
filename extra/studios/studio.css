@@ -109,6 +109,8 @@
 .list__item_img-small {
   max-width: 100%;
   height: auto;
+  max-height: auto;
+  min-height: auto;
   margin-bottom: 5px;
   cursor: pointer;
   border: 2px solid white;
@@ -121,6 +123,7 @@
 }
 .list__item_imgs {
   padding-left: 25px;
+  overflow: auto;
 }
 .list__item_imgs_small {
   width: 100px;

@@ -136,6 +136,8 @@ $border_color: #E0E0E0;
       &-small {
         max-width: 100%;
         height: auto;
+        max-height: auto;
+        min-height: auto;
         margin-bottom: 5px;
         cursor: pointer;
         border: 2px solid white;
@@ -152,6 +154,7 @@ $border_color: #E0E0E0;
 
     &_imgs {
       padding-left: 25px;
+      overflow: auto;
 
       &_small {
         width: 100px;
