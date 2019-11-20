@@ -87,7 +87,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Амстердам', 'href' => 'https://vk.com/market-133756115?w=product-133756115_1765584'],
                 'price' => 1200,
                 'description' =>
-                    'Зал студия 80 м<sup>2</sup>, с декоративной кухней и действующим душем , а также красивый 
+                    'Зал студия 80 м<sup>2</sup>, с декоративной кухней и действующим душем, а также красивый 
                     балкончик с красивым видом на Неву.',
                 'furniture' => 1,
                 'darkness' => 0,
@@ -96,7 +96,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Лифт/Мансарда', 'href' => 'https://vk.com/market-133756115?w=product-133756115_2791641_9f16ea70fe8bc0dd79'],
                 'price' => 1300,
                 'description' =>
-                    'Здесь могло быть ваше описание гы =)',
+                    'Большой интерьерный зал с кроватью и кирпичными стенами.',
                 'furniture' => 1,
                 'darkness' => 1,
             ],
@@ -142,7 +142,8 @@ function createStudio($studio, $infos, $photos, $contacts) {
             ],
             'price' => 900,
             'description' =>
-                'Здесь могло быть ваше описание гы =)',
+                'Зал 70 м<sup>2</sup>. Циклорама. Гримерка за час входит в стоимость. 
+                Бесплатно предоставляются тканевые и бумажные фоны.',
             'furniture' => 0,
             'darkness' => 0,
         ], ['artpro_0.jpg', 'artpro_1.jpg',], [
@@ -160,8 +161,8 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Studio B', 'href' => 'https://vk.com/market-80652199?section=album_2&w=product-80652199_2068613%2Fquery'],
                 'price' => 1000,
                 'description' =>
-                    'Красивый и лаконичный зал с эркером и выходом на балкон! Легкий и непринужденный интерьер с 
-                    лепниной и паркетом ХХ века!\n
+                    'Красивый и лаконичный зал 30 м<sup>2</sup> с эркером и выходом на балкон! 
+                    Легкий и непринужденный интерьер с лепниной и паркетом ХХ века!\n
                     Окна зала выходят на солнечную сторону!',
                 'furniture' => 1,
                 'darkness' => 0,
@@ -170,7 +171,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Studio с', 'href' => 'https://vk.com/market-80652199?section=album_2&w=product-80652199_1704192%2Fquery'],
                 'price' => 1400,
                 'description' =>
-                    'Большой и очень светлый зал с белой 7-метровой циклорамой! \n
+                    'Большой и очень светлый зал 85 м<sup>2</sup> с белой 7-метровой циклорамой! \n
                     Невероятная лепнина с позолотой, роскошные и высокие потолки, и огромное количество естественного света!',
                 'furniture' => 2,
                 'darkness' => 0,
@@ -314,7 +315,8 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Balcony Room', 'href' => 'http://skypointstudio.ru/balconyroom'],
                 'price' => 1300,
                 'description' =>
-                    'Описание',
+                    'Балкон с видом на Неву и мосты. Деревянный пол, лестница, кровать и фоновая система.
+                    Зал 50 м<sup>2</sup>',
                 'furniture' => 1,
                 'darkness' => 0,
             ],
@@ -322,7 +324,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Grey Room', 'href' => 'http://skypointstudio.ru/greyroom'],
                 'price' => 1400,
                 'description' =>
-                    'Описание',
+                    'Просторный темный интерьерный зал.',
                 'furniture' => 1,
                 'darkness' => 1,
             ],
@@ -330,7 +332,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Нижний', 'href' => 'http://skypointstudio.ru/lower'],
                 'price' => 1400,
                 'description' =>
-                    'Описание',
+                    'Очень светлый просторный зал с различными текстурами и преметами интерьера.',
                 'furniture' => 1,
                 'darkness' => 1,
             ],
@@ -338,7 +340,8 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => 'Первый этаж', 'href' => 'http://skypointstudio.ru/1etazh'],
                 'price' => 1400,
                 'description' =>
-                    'Описание',
+                    'Просторный светлый зал с большим количеством окон и естественным освещением.
+                    Окна выходят на питерские виды.',
                 'furniture' => 1,
                 'darkness' => 0,
             ],
@@ -385,7 +388,8 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => '51 ST.', 'href' => 'https://st212.com/studio/6'],
                 'price' => 1390,
                 'description' =>
-                    'Описание',
+                    '2 зоны, интерьерный зал, интерьер в стиле парижской квартиры.
+                    Окна зала выходят на западную сторону.',
                 'furniture' => 1,
                 'darkness' => 0,
             ],
@@ -393,7 +397,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => '96 ST.', 'href' => 'https://st212.com/studio/5'],
                 'price' => 1390,
                 'description' =>
-                    'Описание',
+                    'Подвесная система бумажных фонов, две текстурные стены.',
                 'furniture' => 1,
                 'darkness' => 0,
             ],
@@ -401,7 +405,8 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'hall' => ['name' => '59 ST.', 'href' => 'https://st212.com/studio/8'],
                 'price' => 1390,
                 'description' =>
-                    'Описание',
+                    'Фактурные стены, интерьерный зал, интерьер в скандинавском стиле.
+                    Окна выходят на восточную сторону',
                 'furniture' => 1,
                 'darkness' => 0,
             ],
