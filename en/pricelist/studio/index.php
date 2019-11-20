@@ -3,7 +3,7 @@
 <head>
     <title>MyInspire. St. Petersburg photographer.</title>
     <?php include '../../../assets/elements/head.php' ?>
-    <link rel="stylesheet" href="/pricelist/studio/studio.css">
+    <link rel="stylesheet" href="/extra/studio.css">
 </head>
 <body>
 <div class="loader main-loader">

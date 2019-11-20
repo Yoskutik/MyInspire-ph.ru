@@ -92,7 +92,7 @@ body {
 
 .footer {
   background-color: #1d262d;
-  padding: 15px 0 30px 0;
+  padding: 20px 0 15px 0;
   border-top: 2px solid #CCC;
   color: white;
   flex-wrap: wrap;
@@ -100,19 +100,44 @@ body {
 
   &__main {
     display: flex;
+    flex-wrap: wrap;
+    padding-right: 165px;
+  }
+
+  .row {
+    margin: 0;
   }
 
   &__block {
-    margin-right: 50px;
-    font-size: 14px !important;
+    margin-right: 30px;
     color: lighten(#869FB2, 20%);
+    max-height: 19px;
+    overflow: hidden;
+    transition-duration: 0.5s;
 
-    &.near {margin-right: 15px;}
-
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 16px;
+    &_title {
+      margin: 0 0 5px;
+      font-size: 15px;
       color: #bac8d3;
+      cursor: pointer;
+    }
+
+    &_triangle {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 9px solid #bac8d3;
+      margin: 0 4px;
+      position: relative;
+      top: -1px;
+      transition-duration: 0.5s;
+    }
+
+    &_body {
+      padding-left: 15px;
+      font-size: 13px;
     }
 
     a {
@@ -126,10 +151,10 @@ body {
 
   &__copyright {
     position: absolute;
-    bottom: -25px;
+    top: 0;
     right: 0;
     font-size: 14px;
-    color: #869FB2;
+    color: #FAFAFA;
   }
 }
 
@@ -143,12 +168,12 @@ body {
   }
 
   .footer__block {
-    margin-right: 15px;
+    margin-right: 20px;
   }
 }
 
 // xs, sm
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
   .header {
     letter-spacing: 1px;
     font-size: 18px;
@@ -167,21 +192,25 @@ body {
       display: initial;
     }
   }
+
+  .footer__block {
+    &_title {font-size: 14px;}
+    &_body {
+      padding-left: 10px;
+      font-size: 12px;
+    }
+  }
 }
 
 // xxs?
 @media screen and (max-width: 450px) {
-  .footer {
-    &__copyright {
-      bottom: -20px;
-      font-size: 12px;
-    }
-
-    &__block {
-      margin-right: 8px;
-
-      a {font-size: 12px !important;}
-      h1 {font-size: 14px !important;}
+  .footer__block {
+    margin-right: 10px;
+    &_triangle {
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 7px solid #bac8d3;
+      margin: 0 3px;
     }
   }
 
@@ -199,6 +228,12 @@ body {
 @media screen and (max-width: 350px) {
   .header__title {
     font-size: 14px;
+  }
+  .footer__copyright {
+    font-size: 12px;
+  }
+  .footer__main {
+    padding-right: 140px;
   }
 }
 

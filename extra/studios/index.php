@@ -3,7 +3,7 @@
 <head>
     <title>Проверенные студии</title>
     <?php include '../../assets/elements/head.php' ?>
-    <link rel="stylesheet" href="/extra/studio.css">
+    <link rel="stylesheet" href="/extra/studios/studio.css">
 </head>
 <body>
 <div class="loader main-loader">
@@ -16,5 +16,6 @@
     <?php include 'studios.php' ?>
 </div>
 <?php include '../../assets/elements/footer.php' ?>
+<script src="studios.js"></script>
 </body>
 </html>

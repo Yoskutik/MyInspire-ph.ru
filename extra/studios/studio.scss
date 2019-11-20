@@ -1,0 +1,268 @@
+$border_color: #E0E0E0;
+
+.filters {
+  display: flex;
+  justify-content: flex-end;
+
+  &__cost-n-darkness {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  &__cost {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 1px solid $border_color;
+    border-radius: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    i {
+      display: block;
+      width: 10px;
+      height: 4px;
+      margin-bottom: 4px;
+      background: darken($border_color, 10%);
+      border-radius: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &.__asc {
+      i:first-child {
+        width: 5px;
+      }
+      i:last-child {
+        width: 15px;
+      }
+    }
+
+    &.__desc {
+      i:first-child {
+        width: 15px;
+      }
+      i:last-child {
+        width: 5px;
+      }
+    }
+
+    &.active {
+      background: lighten($border_color, 5%);
+    }
+
+    &:hover {
+      background: lighten($border_color, 10%);
+    }
+  }
+
+  &__filter {
+    display: flex;
+
+    span {
+      padding: 5px 10px;
+      cursor: pointer;
+      border: 1px solid $border_color;
+
+      &.active {
+        text-decoration: underline;
+        background: lighten($border_color, 5%);
+      }
+
+      &:hover {
+        background: lighten($border_color, 10%);
+      }
+
+      &:active {
+        background: $border_color;
+      }
+
+      &:first-child {
+        border-right: none;
+        border-radius: 10px 0 0 10px;
+      }
+
+      &:last-child {
+        border-left: none;
+        border-radius: 0 10px 10px 0;
+      }
+    }
+  }
+}
+
+.list {
+  &__item {
+    padding: 10px 0;
+
+    a {
+      color: #212529;
+    }
+
+    &_studio {
+      padding: 0;
+      font-size: 28px;
+      margin: 10px 0 15px;
+    }
+
+    &_hall {
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    &_price {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 20px;
+
+      &:after {
+        content: ' ₽';
+        font-weight: normal;
+      }
+    }
+
+    &_contacts {
+      margin-top: 10px;
+    }
+
+    &_img {
+      max-width: calc(100% - 105px);
+      height: auto;
+      transition-duration: 1s;
+
+      &-small {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+        cursor: pointer;
+        border: 2px solid white;
+
+        &:hover, &.active {
+          border: 2px solid $border_color;
+        }
+      }
+
+      &.__single {
+        max-width: 100%;
+      }
+    }
+
+    &_imgs {
+      padding-left: 25px;
+
+      &_small {
+        width: 100px;
+        float: right;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #E0E0E0;
+      position: relative;
+      top: 10px;
+    }
+
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .list__item {
+    &_studio {
+      font-size: 26px;
+    }
+
+    &_hall {
+      font-size: 24px;
+    }
+
+    &_price {
+      font-size: 18px;
+    }
+
+    &_img {
+      max-width: 100%;
+
+      &-small {
+        max-width: 100px;
+        margin: 0 3px 0 0;
+      }
+    }
+
+    &_imgs_small {
+      width: 100%;
+      overflow-y: scroll;
+      float: initial;
+      display: flex;
+      margin-top: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .filters {
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__cost-n-darkness {
+      margin: 0 0 10px 0;
+    }
+
+    &__cost {
+      margin-right: 10px;
+    }
+  }
+
+  .list__item {
+    &_imgs {
+      padding: 0 10px;
+      margin-bottom: 25px;
+    }
+
+    &_studio {
+      padding: 0 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .filters {
+    font-size: 15px;
+
+    &__filter span {
+      padding: 3px 8px;
+    }
+  }
+
+  .list__item {
+    &_studio {
+      font-size: 24px;
+    }
+
+    &_hall {
+      font-size: 22px;
+    }
+
+    &_price {
+      font-size: 17px;
+    }
+
+    &_description {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .filters {
+    font-size: 14px;
+  }
+}

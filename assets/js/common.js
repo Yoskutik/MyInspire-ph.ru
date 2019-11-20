@@ -34,7 +34,18 @@ $(window).on('load', () => {
                 id: el.data('id'),
             },
         })
-    })
+    });
+
+    $('.footer__block_title').on('click', function() {
+        let el = $(this).parent();
+        if (el[0].offsetHeight < 20) {
+            el.find('.footer__block_triangle').css('transform', 'rotate(90deg)');
+            el.css('max-height', el.find('.footer__block_title')[0].offsetHeight + el.find('.footer__block_body')[0].offsetHeight + 2 + 'px');
+        } else {
+            el.find('.footer__block_triangle').css('transform', 'rotate(0deg)');
+            el.css('max-height', el.find('.footer__block_title')[0].offsetHeight + 'px');
+        }
+    });
 });
 
 function toast(title, text) {

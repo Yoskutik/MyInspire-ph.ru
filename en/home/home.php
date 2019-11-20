@@ -26,7 +26,7 @@
         <div class="card info">
             <div class="card-body">
                 <div class="avatar">
-                    <img alt="Avatar" src="/assets/ava.jpg">
+                    <img alt="Avatar" src="/assets/ava.png">
                 </div>
                 <div>
                     <h4 class="card-title">Melnikova Tatiana</h4>

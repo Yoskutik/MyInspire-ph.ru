@@ -5,4 +5,4 @@ Disallow : /assets/
 Disallow : /pricelist/studio/
 Host: https://MyInspire-ph.ru
 Sitemap: https://MyInspire-ph.ru/sitemap.xml
-Crawl-delay: 3
+Crawl-delay: 5
