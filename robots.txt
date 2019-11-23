@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow : /api/
 Disallow : /assets/
-Disallow : /pricelist/studio/
+Disallow : /extra/
 Host: https://MyInspire-ph.ru
 Sitemap: https://MyInspire-ph.ru/sitemap.xml
 Crawl-delay: 5

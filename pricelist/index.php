@@ -1,14 +1,13 @@
 <!DOCTYPE>
 <html lang="ru">
 <head>
-    <title>MyInspire. Фотограф в Санкт-Петербурге. Цены.</title>
+    <title>Фотограф в Санкт-Петербурге. Мельникова Татьяна. Цены.</title>
     <meta name="description" content="
-        Атмосферные фото в Санкт-Петербурге от профессионального фотографа.
-        Экспресс фотосессия от 2000р. Лавстори, фотопрогулка, студийная
-        фотосессия и профессиональная ретушь ваших снимков.">
-    <meta name="keywords" content="
-        MyInspire цены, MyInspire услуги, MyInspire прайслист,
-        Услуги фотографа">
+        Экспресс-фотопрогулка 3000 ₽. Стандартная Фотопрогулка 5500 ₽.
+        Студийная съёмка 5000 ₽. Есть возможность покупки дополнительного
+        времени">
+    <meta name="keywords" content="Фотограф Санкт-Петербург цены,
+        Мельникова Татьяна цены, Фотограф СПБ цены, Фотограф цены">
     <?php include '../assets/elements/head.php' ?>
     <link rel="stylesheet" href="/pricelist/pricelist.css">
     <script src="/pricelist/pricelist.js"></script>
@@ -24,5 +23,6 @@
     <?php include 'pricelist.php' ?>
 </div>
 <?php include '../assets/elements/footer.php' ?>
+<?php include '../assets/elements/yandex.metrica.php' ?>
 </body>
 </html>

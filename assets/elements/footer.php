@@ -4,10 +4,10 @@
             <div class="row justify-content-center">
                 <div class="footer__main col-md-9">
                     <div class="footer__block">
-                        <h1 class="footer__block_title">
+                        <h4 class="footer__block_title">
                             <span class="footer__block_triangle"></span>
                             Contacts
-                        </h1>
+                        </h4>
                         <div class="footer__block_body">
                             <a target="_blank" href="https://www.instagram.com/myinspire_ph/" data-id="Instagram" class="count-link">
                                 Instagram
@@ -32,19 +32,19 @@
                         </div>
                     </div>
                     <div class="footer__block">
-                        <h1 class="footer__block_title">
+                        <h4 class="footer__block_title">
                             <span class="footer__block_triangle"></span>
                             Developer
-                        </h1>
+                        </h4>
                         <div class="footer__block_body">
                             <a href="https://www.github.com/yoskutik" target="_blank">Yoskutik</a>
                         </div>
                     </div>
                     <div class="footer__block">
-                        <h1 class="footer__block_title">
+                        <h4 class="footer__block_title">
                             <span class="footer__block_triangle"></span>
                             Icons
-                        </h1>
+                        </h4>
                         <div class="footer__block_body">
                             By <a href="https://www.freepik.com/" title="Freepik">Freepik</a><br>
                             From <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a><br>

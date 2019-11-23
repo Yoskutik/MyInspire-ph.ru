@@ -3,15 +3,12 @@
 <!DOCTYPE>
 <html lang="ru">
 <head>
-    <title>MyInspire. Фотограф в Санкт-Петербурге.</title>
+    <title>Фотограф в Санкт-Петербурге. Мельникова Татьяна.</title>
     <meta name="description" content="
         Атмосферные фото в Санкт-Петербурге от профессионального фотографа.
         Экспресс фотосессия от 3000 ₽. Лавстори, фотопрогулка, студийная
         фотосессия и профессиональная ретушь ваших снимков.">
-    <meta name="keywords" content="
-        Фотограф СПБ, Фотограф Санкт-Петербург, Фотосессия СПБ, Фотосессия Санкт-Петербург,
-        Love story СПБ, Love story Санкт-Петербург, Портрет СПБ, Портрет Санкт-Петербург,
-        Съёмка СПБ, Съёмка Санкт-Петербург, Атмосферные фото">
+    <meta name="keywords" content="Фотограф Санкт-Петербург, Мельникова Татьяна, Фотограф СПБ, Фотограф">
     <?php include 'assets/elements/head.php' ?>
     <link rel="stylesheet" href="/home/home.css">
     <script>
@@ -39,5 +36,6 @@
     } ?>
 </div>
 <?php include 'assets/elements/footer.php' ?>
+<?php include 'assets/elements/yandex.metrica.php' ?>
 </body>
 </html>

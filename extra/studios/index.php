@@ -16,6 +16,7 @@
     <?php include 'studios.php' ?>
 </div>
 <?php include '../../assets/elements/footer.php' ?>
+<?php include '../../assets/elements/yandex.metrica.php' ?>
 <script src="studios.js"></script>
 </body>
 </html>

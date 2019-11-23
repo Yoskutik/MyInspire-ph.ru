@@ -39,7 +39,7 @@ function createHall($info, $photos, $contacts) {
                     <p class=\"list__item_description\">$description</p>
                 </div>
                 <div class=\"list__item_contacts\">
-                    <b>Контакты:</b>
+                    <strong>Контакты:</strong>
                     <p>
                         $address
                         $phone
@@ -64,7 +64,7 @@ function createStudio($studio, $infos, $photos, $contacts) {
     <div class="col-md-12 filters">
         <div class="filters__cost-n-darkness"> <!-- Seems to be a coustil =) -->
             <span class="filters__cost __asc" title="Сортировать по увеличению стоимости">
-                <i></i><i></i><i></i>
+                <span></span><span></span><span></span>
             </span>
             <div class="filters__darkness filters__filter">
                 <span class="filters__darkness_all active">Все</span>

@@ -9676,7 +9676,9 @@ body {
   display: flex;
 }
 .header__title {
-  margin-left: auto;
+  margin: 0 0 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .header__link {
   color: #5c5c65;
@@ -9701,12 +9703,12 @@ body {
   left: 0;
   width: 100%;
 }
-.header i {
+.header button span {
   display: block;
   width: 25px;
   height: 5px;
 }
-.header i:nth-child(2n+1) {
+.header button span:nth-child(2n+1) {
   background: darkgray;
 }
 .header .dropdown-toggle:after {
@@ -9808,6 +9810,9 @@ body {
   .header .nav-link {
     padding: 0.5rem 0.5rem;
   }
+  .header__title {
+    font-size: 16px;
+  }
 
   .footer__block {
     margin-right: 20px;
@@ -9815,6 +9820,10 @@ body {
 }
 @media screen and (max-width: 769px) {
   .header {
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  .header__title {
     letter-spacing: 1px;
     font-size: 18px;
   }

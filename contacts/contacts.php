@@ -22,24 +22,35 @@
         <div class="col-md-6 contacts__column">
             <h4 class="">Контакты</h4>
             <p>
-                <b>Свяжитесь со мной:</b><br>
-                E-mail: <a href="mailto:tatiana@myinspire-ph.ru" class="count-link" data-id="E-mail">tatiana@myinspire-ph.ru</a>
+                <strong>Свяжитесь со мной:</strong><br>
+                E-mail:
+                <a href="mailto:tatiana@myinspire-ph.ru" class="count-link" data-id="E-mail" title="E-mail">
+                    tatiana@myinspire-ph.ru
+                </a>
                 <img alt="Копировать" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="E-mail"
+                     title="Копировать"
                      onclick="copy('tatiana@myinspire-ph.ru', 'Электронная почта', 'Адрес электронной почты был скопирован')"><br>
-                Телефон: <a href="tel:+7(999)515-42-17" class="count-link" data-id="Phone">+7(999)515-42-17</a>
+                Телефон:
+                <a href="tel:+7(999)515-42-17" class="count-link" data-id="Phone" title="Телефон">
+                    +7(999)515-42-17
+                </a>
                 <img alt="Копировать" class="copy count-link" src="/assets/icons/copy.png" width="16" data-id="Phone"
+                     title="Копировать"
                      onclick="copy('+7(999)515-42-17', 'Телефон', 'Номер телефона был скопирован')"><br>
                 Для связи в WhatsApp, Telegram
             </p>
-            <p><b>Социальные сети:</b></p>
+            <p><strong>Социальные сети:</strong></p>
             <div class="contacts__links">
-                <a href="https://www.instagram.com/myinspire_ph/" target="_blank" data-id="Instagram" class="count-link">
+                <a href="https://www.instagram.com/myinspire_ph/" target="_blank" data-id="Instagram"
+                   class="count-link" title="Instagram">
                     <?= HTML::render('instagram.svg', ['size' => 35, 'className' => 'contacts__link'], 'assets/icons') ?>
                 </a>
-                <a href="https://vk.com/inspiredbyspb" target="_blank" data-id="VK" class="count-link">
+                <a href="https://vk.com/inspiredbyspb" target="_blank" data-id="VK"
+                   class="count-link" title="VK">
                     <?= HTML::render('vk.svg', ['size' => 35, 'className' => 'contacts__link'], 'assets/icons') ?>
                 </a>
-                <a href="https://www.pinterest.ru/tatianamix1910/" target="_blank" data-id="Pinterest" class="count-link">
+                <a href="https://www.pinterest.ru/tatianamix1910/" target="_blank" data-id="Pinterest"
+                   class="count-link" title="Pinterest">
                     <?= HTML::render('pinterest.svg', ['size' => 35, 'className' => 'contacts__link'], 'assets/icons') ?>
                 </a>
             </div>
@@ -56,25 +67,25 @@
             <form class="contacts__message">
                 <div class="contacts__message_field">
                     <div>
-                        <input class="contacts__message_input" name="name" type="text" placeholder="Ваше имя:">
+                        <input title="Имя" class="contacts__message_input" name="name" type="text" placeholder="Ваше имя:">
                     </div>
                 </div>
                 <div class="contacts__message_field">
                     <div>
-                        <input class="contacts__message_input" name="email" type="email" placeholder="E-mail:">
+                        <input title="Почтовый адрес" class="contacts__message_input" name="email" type="email" placeholder="E-mail:">
                     </div>
                 </div>
                 <div class="contacts__message_field">
                     <div>
-                        <input class="contacts__message_input" name="subject" type="text" placeholder="Тема:">
+                        <input title="Тема" class="contacts__message_input" name="subject" type="text" placeholder="Тема:">
                     </div>
                 </div>
                 <div class="contacts__message_field">
                     <div>
-                        <textarea class="contacts__message_input" rows="6" name="body" placeholder="Сообщение:"></textarea>
+                        <textarea title="Сообщение" class="contacts__message_input" rows="6" name="body" placeholder="Сообщение:"></textarea>
                     </div>
                 </div>
-                <input type="submit" value="Отправить" class="contacts__message_submit count-link" data-id="E-mail">
+                <input title="Отправить" type="submit" value="Отправить" class="contacts__message_submit count-link" data-id="E-mail">
                 <p class="contacts__message_error empty text-danger">* Перед отправкой заполните, пожалуйста, все поля</p>
                 <p class="contacts__message_error email text-danger">* Адрес электронной почты недействителен</p>
             </form>

@@ -20,7 +20,7 @@ $border_color: #E0E0E0;
     justify-content: center;
     align-items: flex-start;
 
-    i {
+    span {
       display: block;
       width: 10px;
       height: 4px;
@@ -34,19 +34,19 @@ $border_color: #E0E0E0;
     }
 
     &.__asc {
-      i:first-child {
+      span:first-child {
         width: 5px;
       }
-      i:last-child {
+      span:last-child {
         width: 15px;
       }
     }
 
     &.__desc {
-      i:first-child {
+      span:first-child {
         width: 15px;
       }
-      i:last-child {
+      span:last-child {
         width: 5px;
       }
     }
@@ -202,7 +202,7 @@ $border_color: #E0E0E0;
 
     &_imgs_small {
       width: 100%;
-      overflow-y: scroll;
+      overflow-y: hidden;
       float: initial;
       display: flex;
       margin-top: 3px;

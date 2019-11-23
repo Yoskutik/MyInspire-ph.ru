@@ -21,7 +21,11 @@ body {
 
   .container {display: flex;}
 
-  &__title {margin-left: auto;}
+  &__title {
+    margin: 0 0 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
 
   &__link {
     color: $font_color;
@@ -51,7 +55,7 @@ body {
     }
   }
 
-  i {
+  button span {
     display: block;
     width: 25px;
     height: 5px;
@@ -164,7 +168,13 @@ body {
     letter-spacing: 0;
     font-size: 16px;
 
-    .nav-link {padding: 0.5rem 0.5rem}
+    .nav-link {
+      padding: 0.5rem 0.5rem;
+    }
+
+    &__title {
+      font-size: 16px;
+    }
   }
 
   .footer__block {
@@ -177,6 +187,11 @@ body {
   .header {
     letter-spacing: 1px;
     font-size: 18px;
+
+    &__title {
+      letter-spacing: 1px;
+      font-size: 18px;
+    }
 
     &__link {
       padding-left: 12px;

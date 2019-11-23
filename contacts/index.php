@@ -3,12 +3,12 @@
 <!DOCTYPE>
 <html lang="ru">
 <head>
-    <title>MyInspire. Фотограф в Санкт-Петербурге. Контакты.</title>
+    <title>Мельникова Татьяна. Контакты.</title>
     <meta name="description" content="
-        Атмосферные фото в Санкт-Петербурге от профессионального фотографа.
-        Экспресс фотосессия от 3000р. Лавстори, фотопрогулка, студийная
-        фотосессия и профессиональная ретушь ваших снимков.">
-    <meta name="keywords" content="MyInspire контакты, MyInspire телефон, MyInspire почта">
+        Электронная почта, номер телефона и социальные сети.
+        Есть форма обратной связи.">
+    <meta name="keywords" content="Фотограф Санкт-Петербург контакты,
+        Мельникова Татьяна контакты, Фотограф СПБ контакты, Фотограф контакты">
     <?php include '../assets/elements/head.php' ?>
     <link rel="stylesheet" href="/contacts/contacts.css">
     <script src="/contacts/contacts.js"></script>
@@ -24,5 +24,6 @@
     <?php include 'contacts.php' ?>
 </div>
 <?php include '../assets/elements/footer.php' ?>
+<?php include '../assets/elements/yandex.metrica.php' ?>
 </body>
 </html>
