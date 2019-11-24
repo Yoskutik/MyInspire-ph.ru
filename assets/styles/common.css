@@ -9655,7 +9655,12 @@ h3 {
     border-color: #dee2e6;
   }
 }
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-family: Gotham, sans-serif;

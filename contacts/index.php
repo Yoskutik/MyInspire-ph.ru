@@ -1,15 +1,15 @@
 <?php require_once '../HTML.php' ?>
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
+    <?php include '../assets/elements/head.php' ?>
     <title>Мельникова Татьяна. Контакты.</title>
     <meta name="description" content="
         Электронная почта, номер телефона и социальные сети.
         Есть форма обратной связи.">
     <meta name="keywords" content="Фотограф Санкт-Петербург контакты,
-        Мельникова Татьяна контакты, Фотограф СПБ контакты, Фотограф контакты">
-    <?php include '../assets/elements/head.php' ?>
+        Мельникова Татьяна контакты, Фотограф СПб контакты, Фотограф контакты">
     <link rel="stylesheet" href="/contacts/contacts.css">
     <script src="/contacts/contacts.js"></script>
 </head>

@@ -3,6 +3,7 @@ Allow: /
 Disallow : /api/
 Disallow : /assets/
 Disallow : /extra/
+Disallow : /404/
 Host: https://MyInspire-ph.ru
 Sitemap: https://MyInspire-ph.ru/sitemap.xml
 Crawl-delay: 5

@@ -1,14 +1,14 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
+    <?php include '../assets/elements/head.php' ?>
     <title>Фотограф в Санкт-Петербурге. Мельникова Татьяна. Цены.</title>
     <meta name="description" content="
         Экспресс-фотопрогулка 3000 ₽. Стандартная Фотопрогулка 5500 ₽.
         Студийная съёмка 5000 ₽. Есть возможность покупки дополнительного
         времени">
     <meta name="keywords" content="Фотограф Санкт-Петербург цены,
-        Мельникова Татьяна цены, Фотограф СПБ цены, Фотограф цены">
-    <?php include '../assets/elements/head.php' ?>
+        Мельникова Татьяна цены, Фотограф СПб цены, Фотограф цены">
     <link rel="stylesheet" href="/pricelist/pricelist.css">
     <script src="/pricelist/pricelist.js"></script>
 </head>

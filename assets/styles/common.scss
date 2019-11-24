@@ -3,7 +3,12 @@
 $font_color: #5c5c65;
 $border_color: #E0E0E0;
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   display: flex;
   flex-direction: column;
   font-family: Gotham, sans-serif;

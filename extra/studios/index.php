@@ -1,8 +1,8 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Проверенные студии</title>
     <?php include '../../assets/elements/head.php' ?>
+    <title>Проверенные студии</title>
     <link rel="stylesheet" href="/extra/studios/studio.css">
 </head>
 <body>

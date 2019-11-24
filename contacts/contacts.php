@@ -81,7 +81,8 @@
                     </div>
                 </div>
                 <div class="contacts__message_field">
-                    <div>
+                    <!-- Да, это кастыль. Почему-то с DOCTYPE html у родителя добавляется 7px -->
+                    <div style="margin-bottom: -7px">
                         <textarea title="Сообщение" class="contacts__message_input" rows="6" name="body" placeholder="Сообщение:"></textarea>
                     </div>
                 </div>

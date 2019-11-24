@@ -1,13 +1,21 @@
+<?php
+    $phrases = [
+        "Заказать фотосессию", "Фотограф в Санкт-Петербурге",
+        "Заказать фотосъёмку", "СПб Фотограф",
+        "Заказать портрет", "В обработке",
+    ];
+    $phrases_length = count($phrases);
+?>
 <div class="row">
     <div class="collage col-lg-9 col-md-8" style="padding-left: 0">
         <div class="collage__block">
             <?php for ($i = 0; $i < 8; $i++) { ?>
-                <img title="Фотография" alt="Мелкая фотография <?= $i ?>" class="small" src="">
+                <img title="Фотография" alt="Мелкая фотография <?= $i ?>. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="small" src="">
             <?php } ?>
         </div>
         <div class="collage__block">
             <?php for ($i = 0; $i < 8; $i++) { ?>
-                <img title="Фотография" alt="Мелкая фотография <?= $i ?>" class="small hidden" src="">
+                <img title="Фотография" alt="Мелкая фотография <?= $i ?>. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="small hidden" src="">
             <?php } ?>
         </div>
         <div class="collage__block">
@@ -15,9 +23,9 @@
             $r = rand(0, 2);
             for ($i = 0; $i < 3; $i++) {
                 if ($i == $r) { ?>
-                    <img title="Фотография" alt="Крупная фотография <?= $i ?>" class="big" src="/home/photos/8-b.png">
+                    <img title="Фотография" alt="Крупная фотография <?= $i ?>. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="big" src="/home/photos/8-b.png">
                 <?php } else { ?>
-                    <img title="Фотография" alt="Крупная фотография <?= $i ?>" class="big hidden" src="">
+                    <img title="Фотография" alt="Крупная фотография <?= $i ?>. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="big hidden" src="">
                 <?php }
             } ?>
         </div>
@@ -54,7 +62,7 @@
 </div>
 <hr class="row">
 <div class="row">
-    <h4 class="title text-center">Обо мне</h4>
+    <h3 class="title text-center">Обо мне</h3>
 </div>
 <div class="row justify-content-center">
     <p class="col-md-5 text-justify">
@@ -73,7 +81,7 @@
 </div>
 <hr class="row">
 <div class="row">
-    <h4 class="title text-center">Индивидуальная съёмка</h4>
+    <h3 class="title text-center">Индивидуальная съёмка</h3>
 </div>
 <div class="row justify-content-center">
     <div class="col-md-9">
@@ -85,17 +93,17 @@
                 съёмки мы продумаем идею, подберём образ, локацию, и если
                 необходимо, то даже составим маршрут из нескольких мест для съёмок.
             </p>
-            <img title="Фотография" alt="Индивидуальная фотография 1" class="individual__photo" src="/home/photos/21.png">
-            <img title="Фотография" alt="Индивидуальная фотография 2" class="individual__photo" src="/home/photos/25-b.png">
-            <img title="Фотография" alt="Индивидуальная фотография 3" class="individual__photo" src="/home/photos/22.png">
-            <img title="Фотография" alt="Индивидуальная фотография 4" class="individual__photo" src="/home/photos/12.png">
-            <img title="Фотография" alt="Индивидуальная фотография 5" class="individual__photo" src="/home/photos/3.png">
+            <img title="Фотография" alt="Индивидуальная фотография 1. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="individual__photo" src="/home/photos/21.png">
+            <img title="Фотография" alt="Индивидуальная фотография 2. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="individual__photo" src="/home/photos/25-b.png">
+            <img title="Фотография" alt="Индивидуальная фотография 3. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="individual__photo" src="/home/photos/22.png">
+            <img title="Фотография" alt="Индивидуальная фотография 4. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="individual__photo" src="/home/photos/12.png">
+            <img title="Фотография" alt="Индивидуальная фотография 5. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="individual__photo" src="/home/photos/3.png">
         </div>
     </div>
 </div>
 <hr class="row">
 <div class="row">
-    <h4 class="title text-center">Парная съемка</h4>
+    <h3 class="title text-center">Парная съемка</h3>
 </div>
 <div class="row justify-content-center">
     <div class="col-md-9">
@@ -107,17 +115,17 @@
                 ваши самые нежные и искренние чувства можно навсегда
                 запечатлеть на фотографии.
             </p>
-            <img title="Фотография" alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/0.jpg">
-            <img title="Фотография" alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/1-minify.jpg">
-            <img title="Фотография" alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/2-minify.jpg">
-            <img title="Фотография" alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/3-minify.jpg">
-            <img title="Фотография" alt="Парная фотография" class="pair__photo" src="/portfolio/photos/pair/4-minify.jpg">
+            <img title="Фотография" alt="Парная фотография. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="pair__photo" src="/portfolio/photos/pair/0.jpg">
+            <img title="Фотография" alt="Парная фотография. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="pair__photo" src="/portfolio/photos/pair/1-minify.jpg">
+            <img title="Фотография" alt="Парная фотография. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="pair__photo" src="/portfolio/photos/pair/2-minify.jpg">
+            <img title="Фотография" alt="Парная фотография. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="pair__photo" src="/portfolio/photos/pair/3-minify.jpg">
+            <img title="Фотография" alt="Парная фотография. <?= $phrases[rand(0, $phrases_length - 1)] ?>" class="pair__photo" src="/portfolio/photos/pair/4-minify.jpg">
         </div>
     </div>
 </div>
 <hr class="row">
 <div class="row">
-    <h4 class="title text-center">Beauty съёмка</h4>
+    <h3 class="title text-center">Beauty съёмка</h3>
 </div>
 <div class="row justify-content-center">
     <div class="col-md-9">
@@ -142,7 +150,7 @@
 </div>
 <hr class="row">
 <div class="row">
-    <h4 class="title text-center">Для крупных коммерческих проектов и творчества</h4>
+    <h3 class="title text-center">Для крупных коммерческих проектов и творчества</h3>
 </div>
 <div class="row justify-content-center commercial">
     <p class="col-md-5 text-justify">
