@@ -15,8 +15,6 @@
             <a title="Цены" class="nav-link header__link" href="/pricelist/"><span>Цены</span></a>
             <a title="Контакты" class="nav-link header__link" href="/contacts/"><span>Контакты</span></a>
         </div>
-        <h2 class="nav-link header__title">MyInspire photographer</h2>
-        <!--Не баг, а потенциальная фича ¯\_(ツ)_/¯-->
-        <h1 style="margin: 0; height: 0; width: 0; overflow: hidden">Фотограф в Санкт-Петербурге</h1>
+        <h2 class="nav-link header__title" title="Фотограф в Санкт-Петербурге">MyInspire photographer</h2>
     </div>
 </header>
