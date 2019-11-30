@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <?php include '../../assets/elements/head.php' ?>
-    <title>Помощь с позированием</title>
+    <title>Шпаргалка по позированию</title>
     <link href="opportunities.css" rel="stylesheet">
 </head>
 <body>
