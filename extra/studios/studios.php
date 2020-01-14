@@ -18,13 +18,13 @@ function createHall($info, $photos, $contacts) {
         ? "Телефон: <a href=\"tel:$phone_number\">{$contacts['phone']}</a>"
         : '';
     if (!is_array($photos)) {
-        $images = "<img alt=\"Фотография\" class=\"list__item_img __single\" src=\"$photos\">";
+        $images = "<img alt=\"Фотография\" class=\"list__item_img __single\" src=\"photos/$photos\">";
     } else {
         $images = "
-            <img alt=\"Фотография\" class=\"list__item_img\" src=\"{$photos[0]}\">
+            <img alt=\"Фотография\" class=\"list__item_img\" src=\"photos/{$photos[0]}\">
             <div class=\"list__item_imgs_small\">";
         foreach($photos as $photo) {
-            $images .= "<img alt=\"Фотография\" class=\"list__item_img-small\" src=\"$photo\">";
+            $images .= "<img alt=\"Фотография\" class=\"list__item_img-small\" src=\"photos/$photo\">";
         }
         $images .= '</div>';
     }
@@ -225,14 +225,6 @@ function createStudio($studio, $infos, $photos, $contacts) {
             'href' => 'https://kaps.pro/'
         ], [
             [
-                'hall' => ['name' => '101', 'href' => 'https://vk.com/market-52713672?w=product-52713672_3473094'],
-                'price' => 1000,
-                'description' =>
-                    'Студия площадью 80 м<sup>2</sup> с циклорамой и огромным панорамным окном',
-                'furniture' => 0,
-                'darkness' => 0,
-            ],
-            [
                 'hall' => ['name' => '103', 'href' => 'https://vk.com/market-52713672?w=product-52713672_3473102'],
                 'price' => 1200,
                 'description' =>
@@ -241,7 +233,6 @@ function createStudio($studio, $infos, $photos, $contacts) {
                 'darkness' => 0,
             ],
         ], [
-            ["kaps_101_0.jpg", "kaps_101_1.jpg", "kaps_101_2.jpg", "kaps_101_3.jpg"],
             ["kaps_103_0.jpg", "kaps_103_1.jpg", "kaps_103_2.jpg", "kaps_103_3.jpg"],
         ], [
             'address' => [
@@ -421,5 +412,47 @@ function createStudio($studio, $infos, $photos, $contacts) {
             ],
             'phone' => '+7(812)244-21-24',
         ])?>
+        <?= createHall([
+            'studio' => [
+                'name' => 'Как дома',
+                'href' => 'https://www.instagram.com/studiokakdoma/',
+            ],
+            'hall' => [
+                'name' => 'Как дома',
+                'href' => 'https://www.instagram.com/studiokakdoma/'
+            ],
+            'price' => 2000,
+            'description' =>
+                'Уютное светлое фотопространство',
+            'furniture' => 1,
+            'darkness' => 0,
+        ], ['kak_doma_0.jpg', 'kak_doma_1.jpg', 'kak_doma_2.jpg', 'kak_doma_3.jpg'], [
+            'address' => [
+                'location' =>'м. пл. Александра Невского, 8-я Советская ул., д. 54, кв. 24',
+                'href' => 'https://www.google.com/maps/place/8-я+Советская+ул.,+54,+Санкт-Петербург,+191144/',
+            ],
+        ]) ?>
+        <?= createHall([
+            'studio' => [
+                'name' => 'Пространство на Неве',
+                'href' => 'https://www.instagram.com/prostranstvo_na_neve/',
+            ],
+            'hall' => [
+                'name' => 'Пространство на Неве',
+                'href' => 'https://www.instagram.com/prostranstvo_na_neve/'
+            ],
+            'price' => 2000,
+            'description' =>
+                'Студия, состаящая из 2 комнат. Каждая из которых являет собой отдельное пространство для съёмок.
+                Одна комната представляет собой минималистичную кухню с балкончиком, выходящим на набережную Невы.
+                Вторая представляет собой уютную гостинную комнату со стильной мебелью.',
+            'furniture' => 1,
+            'darkness' => 0,
+        ], ['neva_space_0.jpg', 'neva_space_1.jpg', 'neva_space_2.jpg', 'neva_space_3.jpg'], [
+            'address' => [
+                'location' =>'м. Площадь Ленена, Воскресенская наб., д. 26, кв. 69 (вход со двора)',
+                'href' => 'https://www.google.com/maps/place/Воскресенская+наб.,+26,+Санкт-Петербург,+191123/@59.9496029,30.352063,17.44z',
+            ],
+        ]) ?>
     </div>
 </div>

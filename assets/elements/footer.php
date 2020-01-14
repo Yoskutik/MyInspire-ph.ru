@@ -52,7 +52,7 @@
                         </div>
                     </div>
                     <span class="footer__copyright">
-                        &copy; <?= date('Y') ?> MyInspire-ph.ru
+                        &copy; 2019-<?= date('Y') ?> MyInspire-ph.ru
                     </span>
                 </div>
             </div>

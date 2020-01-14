@@ -1,0 +1,34 @@
+.stylist {
+  border-bottom: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 10px 10px;
+  margin-top: -1px;
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    font-size: 15px;
+    opacity: 0.9;
+  }
+
+  &__price {
+    &:after {
+      content: ' ₽';
+    }
+  }
+}
+
+.caption {
+  margin-top: 20px;
+  margin-left: 10px;
+  display: block;
+}
+
+.intro {
+  text-indent: 2em;
+  padding: 10px;
+  margin: 0;
+  text-align: justify;
+}
