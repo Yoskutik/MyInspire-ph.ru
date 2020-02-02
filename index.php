@@ -11,10 +11,7 @@
         фотосессия и профессиональная ретушь ваших снимков.">
     <meta name="keywords" content="Фотограф Санкт-Петербург, Мельникова Татьяна, Фотограф СПб, Фотограф">
     <link rel="stylesheet" href="/home/home.css">
-    <script>
-        let collageNumber = <?= count(glob(__DIR__. "/home/photos/*")) / 2 ?>;
-    </script>
-    <script src="/home/home.js"></script>
+<!--    <script src="/home/home.js"></script>-->
 </head>
 <body>
 <div class="loader main-loader">

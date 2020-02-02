@@ -1,21 +1,32 @@
 .moodboard {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
 .moodboard__title {
-  font-size: 20px;
+  margin: 0;
 }
-.moodboard__caption {
-  font-size: 16px;
-  position: absolute;
-  text-decoration: underline;
+.moodboard svg {
+  max-width: 100% !important;
+  height: auto !important;
 }
-.moodboard__image {
-  max-width: 80%;
-  margin-top: 10px;
+
+@media screen and (max-width: 450px) {
+  .moodboard__title {
+    font-size: 18px;
+  }
+
+  .col-md-8 {
+    padding: 0 !important;
+  }
+
+  svg text {
+    font-size: 70px !important;
+    position: relative;
+    left: 50px;
+  }
 }
 
 /*# sourceMappingURL=moodboard.css.map */
