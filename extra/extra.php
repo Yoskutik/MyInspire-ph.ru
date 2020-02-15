@@ -4,6 +4,7 @@
         height: 100%;
         align-items: center;
         justify-content: center;
+        margin: 0;
     }
 
     .block {
@@ -30,15 +31,20 @@
     .block a:last-child {
         margin-bottom: 0;
     }
+
+    @media screen and (max-width: 425px) {
+        .block a {
+            font-size: 16px;
+        }
+    }
 </style>
 
 <div class="row">
-    <div class="col-md-4 block">
+    <div class="block">
         <nav class="nav flex-column nav-pills">
             <a class="nav-link" href="studios/">Студии</a>
             <a class="nav-link" href="locations/">Локации для фотопрогулки</a>
             <a class="nav-link" href="poses/">Шпаргалка по позированию</a>
-            <a class="nav-link" href="moodboards/">Подборка мудбордов</a>
             <a class="nav-link" href="stylists/">Контакты визажистов и стилистов</a>
         </nav>
     </div>
