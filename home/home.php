@@ -21,7 +21,7 @@
                     <h2 class="info__subtitle card-title">Мельникова Татьяна</h2>
                     <h1 class="info__title card-subtitle mb-2 text-muted">Фотограф в Санкт-Петербурге</h1>
                     <p class="card-text">
-                        Индивидуальные съёмки, бьюти съёмки, love-story и high-end ретушь.
+                        Индивидуальные фотосессии и love-story.
                     </p>
                     <a href="https://www.instagram.com/myinspire_ph/" class="card-link count-link"
                        data-id="Instagram" target="_blank" title="Instagram">
@@ -48,7 +48,7 @@
     <p class="col-md-5 text-justify">
         Привет. Меня зовут Таня, и я фотограф из прекрасного города
         Санкт-Петербурга. Фотографией занимаюсь сколько себя помню,
-        однако в профессиональное русло это ушло около полутора лет
+        однако в профессиональное русло это ушло около трех лет
         назад. В свои работы я вкладываюсь на все 100%.
     </p>
     <p class="col-md-5 text-justify">

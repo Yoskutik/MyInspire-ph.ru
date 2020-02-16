@@ -23,8 +23,6 @@ function createStylist($name, $type, $price, $username) {
             и советовать их Вам как проверенных мастеров.
         </p>
 
-        <?= createStylist('Лиса Неми', 'Стилист по одежде', 'от 2000', 'lisa_nemi') ?>
-
         <?= createStylist('Джетт', 'Макияж', 'от 1000', 'g_hassliebe') ?>
 
         <?= createStylist('Аня', 'Макияж + прическа', 'полный образ от 2500', 'anya_stylist_spb') ?>
