@@ -133,3 +133,13 @@
   .list__item {font-size: 14px;}
   .action {font-size: 12px;}
 }
+
+@media screen and (max-width: 350px) {
+  .list__item {
+    font-size: 13px;
+
+    &_price {
+      margin-right: 5px;
+    }
+  }
+}

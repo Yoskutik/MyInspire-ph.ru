@@ -133,5 +133,13 @@
     font-size: 12px;
   }
 }
+@media screen and (max-width: 350px) {
+  .list__item {
+    font-size: 13px;
+  }
+  .list__item_price {
+    margin-right: 5px;
+  }
+}
 
 /*# sourceMappingURL=pricelist.css.map */

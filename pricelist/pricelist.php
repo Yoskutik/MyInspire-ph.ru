@@ -1,12 +1,12 @@
 <div class="row justify-content-center">
-<!--    <div class="col-md-10">-->
-<!--        <div class="action alert alert-success" role="alert">-->
-<!--            Текст для временного сообщения-->
-<!--            <button type="button" class="action__close close" aria-label="Close">-->
-<!--                <span aria-hidden="true">×</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="col-md-10">
+        <div class="action alert alert-success" role="alert">
+            Скидка на студийную съёмку действительна при бронировании до 9 марта.
+            <button type="button" class="action__close close" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
     <div class="col-md-10 list">
         <div class="list__item">
             <div>
@@ -40,8 +40,8 @@
         <div class="list__item">
             <div>
                 <strong class="list__item_title"> Студийная съёмка </strong>
-                <strong class="list__item_price">5000</strong>
-<!--                <strong class="list__item_price">2500 <span class="sale">3000</span></strong>-->
+<!--                <strong class="list__item_price">5000</strong>-->
+                <strong class="list__item_price"><span class="text-success"> 4000 </span><span class="sale">5000</span></strong>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -131,42 +131,4 @@
             фотографий, то цена обговаривается отдельно.
         </p>
     </div>
-<!--    <div class="col-md-10 faq">-->
-<!--        <h3 class="text-center faq__title">Часто задаваемые вопросы</h3>-->
-<!--        <div class="faq__block">-->
-<!--            <strong class="faq__block_title">-->
-<!--                Хочется фотосессию с подругой/молодым человеком?-->
-<!--                <span class="faq__block_arrow"></span>-->
-<!--            </strong>-->
-<!--            <p>Никаких дополнительных доплат не требуется, просто обговорим идею и образы для вас двоих.</p>-->
-<!--        </div>-->
-<!--        <div class="faq__block">-->
-<!--            <strong class="faq__block_title">-->
-<!--                Свадебная фотосессия?-->
-<!--                <span class="faq__block_arrow"></span>-->
-<!--            </strong>-->
-<!--            <p>-->
-<!--                Их я снимаю только в формате загс + небольшая прогулка или сборы + загс-->
-<!--                + небольшая прогулка, то есть большие торжества и банкеты я не снимаю.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        <div class="faq__block">-->
-<!--            <strong class="faq__block_title">-->
-<!--                Семейная фотосессия/фотосессия компании друзей?-->
-<!--                <span class="faq__block_arrow"></span>-->
-<!--            </strong>-->
-<!--            <p>-->
-<!--                Если в кадре будет более чем 2 человека, то доплата за каждого последующего-->
-<!--                составляет 1000 ₽ а время съёмки увеличивается на 20 минут. Это также-->
-<!--                следует учитывать при бронировании студии.-->
-<!--            </p>-->
-<!--        </div>-->
-<!--        <div class="faq__block">-->
-<!--            <strong class="faq__block_title">-->
-<!--                Рекламная съёмка/крупный коммерческий проект?-->
-<!--                <span class="faq__block_arrow"></span>-->
-<!--            </strong>-->
-<!--            <p>Цена на подобные съёмки составляется индивидуально в зависимости от ТЗ.</p>-->
-<!--        </div>-->
-<!--    </div>-->
 </div>
