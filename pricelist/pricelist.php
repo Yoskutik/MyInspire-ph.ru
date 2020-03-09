@@ -1,12 +1,12 @@
 <div class="row justify-content-center">
-    <div class="col-md-10">
-        <div class="action alert alert-success" role="alert">
-            Скидка на студийную съёмку действительна при бронировании до 9 марта.
-            <button type="button" class="action__close close" aria-label="Close">
-                <span aria-hidden="true">×</span>
-            </button>
-        </div>
-    </div>
+<!--    <div class="col-md-10">-->
+<!--        <div class="action alert alert-success" role="alert">-->
+<!--            Скидка на студийную съёмку действительна при бронировании до 9 марта.-->
+<!--            <button type="button" class="action__close close" aria-label="Close">-->
+<!--                <span aria-hidden="true">×</span>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="col-md-10 list">
         <div class="list__item">
             <div>
@@ -40,8 +40,8 @@
         <div class="list__item">
             <div>
                 <strong class="list__item_title"> Студийная съёмка </strong>
-<!--                <strong class="list__item_price">5000</strong>-->
-                <strong class="list__item_price"><span class="text-success"> 4000 </span><span class="sale">5000</span></strong>
+                <strong class="list__item_price">5000</strong>
+<!--                <strong class="list__item_price"><span class="text-success"> 4000 </span><span class="sale">5000</span></strong>-->
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
