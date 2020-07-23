@@ -1,17 +1,18 @@
 <div class="row justify-content-center">
-<!--    <div class="col-md-10">-->
-<!--        <div class="action alert alert-success" role="alert">-->
-<!--            Скидка на студийную съёмку действительна при бронировании до 9 марта.-->
-<!--            <button type="button" class="action__close close" aria-label="Close">-->
-<!--                <span aria-hidden="true">×</span>-->
-<!--            </button>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="col-md-10">
+        <div class="action alert alert-success" role="alert">
+            Скидка 20% на фотопрогулки при бронировании до 25 июля.
+            <button type="button" class="action__close close" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    </div>
     <div class="col-md-10 list">
         <div class="list__item">
             <div>
                 <strong class="list__item_title"> Экспресс-фотопрогулка </strong>
-                <strong class="list__item_price">3000</strong>
+<!--                <strong class="list__item_price">3000</strong>-->
+                <strong class="list__item_price">2400 <span class="sale">3000</span></strong>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
@@ -25,8 +26,8 @@
         <div class="list__item">
             <div>
                 <strong class="list__item_title"> Стандарт фотопрогулка </strong>
-                <strong class="list__item_price">5500</strong>
-<!--                <strong class="list__item_price">2500 <span class="sale">3000</span></strong>-->
+<!--                <strong class="list__item_price">5500</strong>-->
+                <strong class="list__item_price">4400 <span class="sale">5500</span></strong>
                 <img alt="open" class="list__item_cross" src="/assets/icons/x.png">
             </div>
             <p>
