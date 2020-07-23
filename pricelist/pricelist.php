@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-md-10">
         <div class="action alert alert-success" role="alert">
-            Скидка 20% на фотопрогулки при бронировании до 25 июля.
+            Скидка 20% на фотопрогулки при бронировании любых летних дат до 25 июля.
             <button type="button" class="action__close close" aria-label="Close">
                 <span aria-hidden="true">×</span>
             </button>
