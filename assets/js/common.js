@@ -88,3 +88,32 @@ function toast(title, text) {
 
     sleep(5000).then(() => el.find('.close').trigger('click'));
 }
+
+var onPinClick = function (advertisements, evt) {
+    if (!document.querySelector('.map__card')) {
+        var pin = evt.target.closest('.map__pin');
+        if  ((!pin)|| (pin.classList.contains('map__pin--main'))) {
+            return;
+        }
+        var j = pin.dataset.index;
+        addAdvertismentCard(advertisements[j]);
+        var cardClose = document.querySelector('.popup__close');
+        cardClose.addEventListener('click', function () {
+            closePopUp();
+        });
+        document.addEventListener('keydown', onClosePopUpEsc);
+    } else {
+        closePopUp();
+        var pin = evt.target.closest('.map__pin');
+        if  ((!pin)|| (pin.classList.contains('map__pin--main'))) {
+            return;
+        }
+        var j = pin.dataset.index;
+        addAdvertismentCard(advertisements[j]);
+        var cardClose = document.querySelector('.popup__close');
+        cardClose.addEventListener('click', function () {
+            closePopUp();
+        });
+        document.addEventListener('keydown', onClosePopUpEsc);
+    }
+}
